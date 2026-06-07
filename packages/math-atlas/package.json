@@ -1,0 +1,23 @@
+{
+    "name": "@cohbit/math-atlas",
+    "version": "0.0.0",
+    "description": "Noetican Multimodel Mathematics Atlas — governed mathematical meaning layer for CohBit-Copilot. Maps mathematical ideas across models (logic, geometry, graphs, categories, code, simulations, proofs) without collapsing them into false equivalence.",
+    "type": "module",
+    "main": "src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "math-atlas",
+        "multimodel",
+        "mathematical-invariant",
+        "evidence-ladder",
+        "cross-model",
+        "governed-memory"
+    ],
+    "license": "ISC"
+}

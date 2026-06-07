@@ -1,0 +1,4984 @@
+{
+  "routes": [
+    {
+      "entryId": "321e734935f70ec11102c62ca787a7bc",
+      "findingId": "FIND_00002",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/coh-ctrl/src/main.rs",
+      "line": 425,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "01047919ca61c83ecf5c5e83e3045dd0",
+      "findingId": "FIND_00004",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-builder/src/lib.rs",
+      "line": 40,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f0ec1e00a1b77382f3842ac32c119933",
+      "findingId": "FIND_00008",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/ast_patch.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "75c289e2b87ed0b41b95b283bd624af7",
+      "findingId": "FIND_00009",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/ast_patch.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5b181b6dc7cbd252bde6a27b5f2d7f41",
+      "findingId": "FIND_00017",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 10,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1a9a2ba6cad904d8351c5c1fd4c97cc0",
+      "findingId": "FIND_00018",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "54a032f6a80249ecc6322d51c96c9886",
+      "findingId": "FIND_00019",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 46,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "060516574292f89914d9199a675a9404",
+      "findingId": "FIND_00020",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 70,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f39f56e6dac06eff0acfcc6e821f6ac1",
+      "findingId": "FIND_00021",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 141,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "875c86a62e40465e97c7866165f73881",
+      "findingId": "FIND_00022",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 150,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "abd2066a79a539d7c7fbf706f0b6b8a3",
+      "findingId": "FIND_00023",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 186,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c10854b4650df66dc826995fece61305",
+      "findingId": "FIND_00037",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 268,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "7c77cd47e87d85f1105959f13877ba6d",
+      "findingId": "FIND_00027",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 279,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ed183ef27523338e9fbd7552e6d52621",
+      "findingId": "FIND_00031",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 279,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "31759fccf667e81f0e6cf5bcfb039b14",
+      "findingId": "FIND_00038",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 416,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "bf12a20dc7b32e60efc8b95b86b9b207",
+      "findingId": "FIND_00028",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 744,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d2184e92b1be613c2622bf6452aebd23",
+      "findingId": "FIND_00032",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 744,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0a29f1c4e4c6d5e2ab89454e0d628bd5",
+      "findingId": "FIND_00029",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 752,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f6e830dd478d8a1f171a56f308f66b34",
+      "findingId": "FIND_00033",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 752,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f516320e450e0ef25323d7ab28f9dae5",
+      "findingId": "FIND_00039",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 856,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "dfdd8482e7c4bf725b7fc4a8b198acc5",
+      "findingId": "FIND_00040",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 867,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "fa7ff99d2dd4e824366ae46ea32d7bec",
+      "findingId": "FIND_00041",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 868,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "49b26a5cd719486cd36675398ec8c84d",
+      "findingId": "FIND_00035",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 896,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2c6b031e88509b0dfea625d0fab05330",
+      "findingId": "FIND_00042",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 896,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ca50e253cd2ea60302c39c512e4a9e35",
+      "findingId": "FIND_00030",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 914,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d1739d85c825bcc3e653d0ae78fe7707",
+      "findingId": "FIND_00034",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 914,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "37c75eb21b2b46c220ec478240bc1034",
+      "findingId": "FIND_00071",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 6,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "793f0b4eb698aaf52474b3eb6b01bb35",
+      "findingId": "FIND_00072",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 78,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "25709c7cce3a45e6e3b476df075be205",
+      "findingId": "FIND_00073",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 78,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "68bd78e689efd3ed4a4b86ce7170e78f",
+      "findingId": "FIND_00074",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 107,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2f80909fab6bbd1d6f6f956e50a482f0",
+      "findingId": "FIND_00075",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/lean_emitter.rs",
+      "line": 114,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "eafdb18417f2e62a6c6b10869b926368",
+      "findingId": "FIND_00076",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/lean_server.rs",
+      "line": 80,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "fefb446ff4111738d99c5fd28453b13c",
+      "findingId": "FIND_00086",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/ledger.rs",
+      "line": 26,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "289722b22c6d95d2bdac597ddfd96a14",
+      "findingId": "FIND_00087",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/ledger.rs",
+      "line": 30,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4dff591cefdbb8a0655c6135b8c71bc7",
+      "findingId": "FIND_00093",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/mathnet_trainer.rs",
+      "line": 74,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "841bf4f6d6bb26e9b4e6be9d4566b423",
+      "findingId": "FIND_00098",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 103,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3d257ccac4f76ee95ca7402d4a2aaef5",
+      "findingId": "FIND_00097",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4efb32d56b7c411a5163cff667898a72",
+      "findingId": "FIND_00099",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "54828ac81218c02fd784722be91d51db",
+      "findingId": "FIND_00102",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/resolver.rs",
+      "line": 48,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "af7eb7cebaac81761fc4816c9c1c7424",
+      "findingId": "FIND_00109",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/tasks.rs",
+      "line": 68,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c263587dcee82e2a03483403e4948c6a",
+      "findingId": "FIND_00110",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/transitive_audit.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "906ca9b6c52946ba496e9c8ae9f0352b",
+      "findingId": "FIND_00111",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/transitive_audit.rs",
+      "line": 42,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f2e8c470a448d8242d1692a084ceb1ac",
+      "findingId": "FIND_00112",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/worker.rs",
+      "line": 41,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3ce4e6f3865aa11df4370cebcd4aacd8",
+      "findingId": "FIND_00113",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/worker.rs",
+      "line": 141,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "124767d48303c07f62efa89450b5c63a",
+      "findingId": "FIND_00123",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/coh-ctrl/src/main.rs",
+      "line": 425,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "fa2847f698badde88a374aa15e85290b",
+      "findingId": "FIND_00125",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-builder/src/lib.rs",
+      "line": 40,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b38aad7548cc7c324965654f56eac318",
+      "findingId": "FIND_00129",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/ast_patch.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f459dfc1884b5fbd4302caa3834f0461",
+      "findingId": "FIND_00130",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/ast_patch.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ab223e684f71fbffee114ef3ec54cb03",
+      "findingId": "FIND_00138",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 10,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3220f9dca7c573df87a880cb8c3d0522",
+      "findingId": "FIND_00139",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3bce8d93fd0a0328ba1b9a33e5da587e",
+      "findingId": "FIND_00140",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 46,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5e68ac43c1644faf5576520c93e855f4",
+      "findingId": "FIND_00141",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 70,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f84b2b8bd85b96105827825c5054da3c",
+      "findingId": "FIND_00142",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 141,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "403f6796915f3c553e2ff3c1b41acee1",
+      "findingId": "FIND_00143",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 150,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0d0f51c1adf34917ec0c08006c0b6515",
+      "findingId": "FIND_00144",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/container_isolation.rs",
+      "line": 186,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1f58b3011bde08b969a4561fd1d61ae9",
+      "findingId": "FIND_00158",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 268,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4f62c27d7c1c8a9ca67b2210b1440097",
+      "findingId": "FIND_00148",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 279,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0378808808ddf105746907b39040207a",
+      "findingId": "FIND_00152",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 279,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5cc04d766c343d514df98f4560270146",
+      "findingId": "FIND_00159",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 417,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8e9454ee3e4060e72f66169563ad35be",
+      "findingId": "FIND_00149",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 745,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "cc7164621ffdca0e0b70df1210a8cb1b",
+      "findingId": "FIND_00153",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 745,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "dbd460919cb42e924ce44ecd58f4888a",
+      "findingId": "FIND_00150",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 753,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b10927661320e07dc340d0e9827c3b74",
+      "findingId": "FIND_00154",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 753,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "cd38aa402d9209d800f3c9467d51fed1",
+      "findingId": "FIND_00160",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 857,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "aed150efd7f7edc70f9fcde0b194472b",
+      "findingId": "FIND_00161",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 868,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3a007cd137b56112326830b8ff7a1d7d",
+      "findingId": "FIND_00162",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 869,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c038f36497fa014127453a498c201494",
+      "findingId": "FIND_00156",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 897,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1a4d7c0d193496dbe9d637a124e566f7",
+      "findingId": "FIND_00163",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 897,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2a116d828d205351e423d1ff86814003",
+      "findingId": "FIND_00151",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 915,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "092c0d8b2b7a9adb01795037abe2059a",
+      "findingId": "FIND_00155",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/engine.rs",
+      "line": 915,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1b052eeb8de05ad2027e47b5c63bf47e",
+      "findingId": "FIND_00192",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 6,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "688af1fc52ff31f4424c2ec17e3b465a",
+      "findingId": "FIND_00193",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 78,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0f1644f803e3d0fe241e5dd2c2094e2b",
+      "findingId": "FIND_00194",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 78,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b445aeb1c1d0f9246416a459a7150c07",
+      "findingId": "FIND_00195",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 107,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "21ce14ccf6457a27d0a91c4da7cb3f2e",
+      "findingId": "FIND_00196",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/lean_emitter.rs",
+      "line": 114,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d354294a0a3dfd134d8cc84158eb3bbd",
+      "findingId": "FIND_00197",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/lean_server.rs",
+      "line": 80,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b50c08061fd97eedd4b557a406410664",
+      "findingId": "FIND_00207",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/ledger.rs",
+      "line": 26,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0d12266aa30c872de292330f52f5372c",
+      "findingId": "FIND_00208",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/ledger.rs",
+      "line": 30,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "aa061fc492c558484c8d6a277ac22a31",
+      "findingId": "FIND_00214",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/mathnet_trainer.rs",
+      "line": 74,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "acd5a548029fa9da1a510714aafcc292",
+      "findingId": "FIND_00219",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 103,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3d1def4dd9c04618f257751cb146e627",
+      "findingId": "FIND_00218",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "56472151b0eb463ba744703eabd4ac1a",
+      "findingId": "FIND_00220",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "05fc1bb641da6e863961251d8bcf0b02",
+      "findingId": "FIND_00223",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/resolver.rs",
+      "line": 48,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4e0354a37306cde5629013606e6a55cd",
+      "findingId": "FIND_00230",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/tasks.rs",
+      "line": 68,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "077888fa6d01823f71f5c6cd223562e2",
+      "findingId": "FIND_00231",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/transitive_audit.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "34701ea9fad9df954ac4565327016546",
+      "findingId": "FIND_00232",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/transitive_audit.rs",
+      "line": 42,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "64ec6b493a8b58be1ef54b1dc0de4d87",
+      "findingId": "FIND_00233",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/worker.rs",
+      "line": 41,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4f06390eadc7d81414e4796d51494791",
+      "findingId": "FIND_00234",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/worker.rs",
+      "line": 141,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e5ef406a5f9978f0bafae92c941cc2ce",
+      "findingId": "FIND_00251",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/env.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "9bbc95f60022d1d96b8f9a2fc7d9efd2",
+      "findingId": "FIND_00252",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/env.rs",
+      "line": 108,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2e43ea0b779cce06b6b1fc32ff03ee19",
+      "findingId": "FIND_00253",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/env.rs",
+      "line": 267,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d660185e9edb1910db6654cf75210fbe",
+      "findingId": "FIND_00254",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/env.rs",
+      "line": 267,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6a2fec81fc89aa23073cd2224c5dfa78",
+      "findingId": "FIND_00255",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/env.rs",
+      "line": 267,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ec09576586e706b416bdea133a492537",
+      "findingId": "FIND_00271",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/lib.rs",
+      "line": 599,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "37330e4a30bffd3fb9df4fb0d6f8aff4",
+      "findingId": "FIND_00272",
+      "file": "CohBit-primitive-review/rust/cohbit-ctrl-tool/src/lib.rs",
+      "line": 604,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1432c096310941991fa3cf6e7691ae27",
+      "findingId": "FIND_00286",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/intense_learning_benchmark.rs",
+      "line": 194,
+      "riskKind": "relative_traversal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3a44852795c99d3afb1f86e9abdb7b6d",
+      "findingId": "FIND_00287",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/intense_learning_benchmark.rs",
+      "line": 199,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "84fbb4f63a7e5135b51ba81a8ff0e96a",
+      "findingId": "FIND_00313",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/src/runtime.rs",
+      "line": 596,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0fc4f1a78f8197481b68927e628fc075",
+      "findingId": "FIND_00314",
+      "file": "CohBit-primitive-review/rust/cohbit-native-lm/examples/pila_reflex_training_loop.rs",
+      "line": 38,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "33e16086a902219ab58226008eee3a7c",
+      "findingId": "FIND_00316",
+      "file": "CohBit-primitive-review/rust/cohbit-native-lm/src/corpus/dictionary.rs",
+      "line": 80,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c441299bcfee82e0dca31197f1fe6715",
+      "findingId": "FIND_00317",
+      "file": "CohBit-primitive-review/rust/cohbit-native-lm/src/corpus/docx_ingest.rs",
+      "line": 61,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "569caf03402951501e36781ed14e2a83",
+      "findingId": "FIND_00328",
+      "file": "CohBit-primitive-review/rust/cohbit-native-lm/src/transformer_model.rs",
+      "line": 108,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "eccad25bd498b429f67db2c53f65c443",
+      "findingId": "FIND_00378",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/canonical_pipeline.rs",
+      "line": 261,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8d4f04a49b810d32c207bbdb59f6614c",
+      "findingId": "FIND_00379",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/canonical_pipeline.rs",
+      "line": 261,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "476bd3005c51ae23ad32f6e087776edb",
+      "findingId": "FIND_00385",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/dual_runtime.rs",
+      "line": 628,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6e4f525cb5300605d28d55693925ac54",
+      "findingId": "FIND_00389",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 392,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "7f23ebc637fd52c54909a4b3c83ae1de",
+      "findingId": "FIND_00395",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 392,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1822abf129e8daea0a625d2432f9538f",
+      "findingId": "FIND_00390",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 398,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6551383fd49b87cf229609c6b8c2bd4f",
+      "findingId": "FIND_00396",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 398,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "96d5eacec9c870f1b1bbcd17d450c19e",
+      "findingId": "FIND_00391",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 402,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4499acd0c614c16d064e9245339b4d62",
+      "findingId": "FIND_00397",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 402,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e33199a5430645c341fe17803c0cba82",
+      "findingId": "FIND_00392",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 406,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "fd21b6625bf03638cdeb7523c200a1c4",
+      "findingId": "FIND_00398",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 406,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c066f7d5b253384642aa897b580a4533",
+      "findingId": "FIND_00393",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 410,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0c0fe9e6b769ea2df575e758a43a9a9f",
+      "findingId": "FIND_00399",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 410,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d0c387f6bcf4b5017504c4a825f23781",
+      "findingId": "FIND_00394",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 416,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ef0a808fd047c3b458c77efc366dd381",
+      "findingId": "FIND_00400",
+      "file": "CohBit-primitive-review/rust/cohbit-offline-lm-runtime/src/governance.rs",
+      "line": 416,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5733a5d1ef30abe517a9610af231e042",
+      "findingId": "FIND_00485",
+      "file": "CohBit-primitive-review/rust/cohbit/src/runtime/policy.rs",
+      "line": 208,
+      "riskKind": "unsafe_block",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_012",
+        "INV_016",
+        "INV_005"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Safety invariant documentation",
+        "Manual review sign-off"
+      ],
+      "reason": "Unsafe blocks bypass Rust safety guarantees. No automatic repair is safe.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8d3cc525f8c668cc5f7f8646ac96fb50",
+      "findingId": "FIND_00588",
+      "file": "crates/coh-ctrl/src/main.rs",
+      "line": 231,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5cdaa03fe69f7238f274d634726d3ec0",
+      "findingId": "FIND_00590",
+      "file": "crates/ctrl-builder/src/lib.rs",
+      "line": 43,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "03e7be40b4835e84e26ca6ed2a955db9",
+      "findingId": "FIND_00595",
+      "file": "crates/ctrl-engine/examples/self_formalization.rs",
+      "line": 128,
+      "riskKind": "relative_traversal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e9ee1d9beb6fa9215b79e0929f11c967",
+      "findingId": "FIND_00596",
+      "file": "crates/ctrl-engine/examples/self_formalization.rs",
+      "line": 128,
+      "riskKind": "relative_traversal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "854ca00f1253f599e52f7ca26effda3b",
+      "findingId": "FIND_00599",
+      "file": "crates/ctrl-engine/examples/self_formalization.rs",
+      "line": 270,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "55671525abcc75c81c963d0212db7a68",
+      "findingId": "FIND_00597",
+      "file": "crates/ctrl-engine/examples/self_formalization.rs",
+      "line": 290,
+      "riskKind": "relative_traversal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "361b1ce452a2b63cd62ff49ea5c6d43f",
+      "findingId": "FIND_00598",
+      "file": "crates/ctrl-engine/examples/self_formalization.rs",
+      "line": 290,
+      "riskKind": "relative_traversal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6cd3552393062edb8575282463e87ab6",
+      "findingId": "FIND_00631",
+      "file": "crates/ctrl-engine/src/ast_patch.rs",
+      "line": 9,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8189d9a8fee972509db15555c97f9d2b",
+      "findingId": "FIND_00632",
+      "file": "crates/ctrl-engine/src/ast_patch.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "84f361fa807cee03b7203f31edd6a1c1",
+      "findingId": "FIND_00640",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 10,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "41a12261a50cdd6421b5009bec3f4b34",
+      "findingId": "FIND_00641",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 36,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "71d83f266a827031f6bf0b84e15b26d1",
+      "findingId": "FIND_00642",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 46,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "76462430aa45db6488d888bf1e1b8f71",
+      "findingId": "FIND_00643",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 70,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "25f68a04f6f086b83041736fd340e4af",
+      "findingId": "FIND_00644",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 141,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "7f591cfd0870e068c7f8527699c46f67",
+      "findingId": "FIND_00645",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 150,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6b5a6bc825b225c3a81ade8b8b05b458",
+      "findingId": "FIND_00646",
+      "file": "crates/ctrl-engine/src/container_isolation.rs",
+      "line": 186,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "87ea8b017d79718d0894b7efabac5e44",
+      "findingId": "FIND_00661",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 294,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "289ca99cbec5733165499ccfbb1cc6ab",
+      "findingId": "FIND_00651",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 306,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8bf837cdad12cbad7e933535b28d99ed",
+      "findingId": "FIND_00655",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 306,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8c55541db8812394834f719db2924c2c",
+      "findingId": "FIND_00662",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 492,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5be0f971664981b9e843a50c6b9b0eaa",
+      "findingId": "FIND_00652",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 947,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f2049dc4fe8595e02d434506e0370f0e",
+      "findingId": "FIND_00656",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 947,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ebbfe1dd07e12b9696d4a8af5797ff87",
+      "findingId": "FIND_00653",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 959,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b81acd498e217544629fe61dca828374",
+      "findingId": "FIND_00657",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 959,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ea2a813b184e931254147f4437b72db8",
+      "findingId": "FIND_00663",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1123,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "db0beb250c622c1d94ee18b10139fe55",
+      "findingId": "FIND_00664",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1136,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c2ace10e71b70b2662b5abe5855b22df",
+      "findingId": "FIND_00665",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1140,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "51a26ecdbfdffbc498fcdcd76ce86153",
+      "findingId": "FIND_00659",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1176,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "385aef664f2eb3e99bf4e9b9a668482f",
+      "findingId": "FIND_00666",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1176,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6abd4ecb6e31270cc8b8851c516849b3",
+      "findingId": "FIND_00654",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1195,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "288596ce4520148fd49451e0b748eafe",
+      "findingId": "FIND_00658",
+      "file": "crates/ctrl-engine/src/engine.rs",
+      "line": 1195,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "854531daf7d173af7de82e9a18e9183b",
+      "findingId": "FIND_00688",
+      "file": "crates/ctrl-engine/src/external_tactic_generator.rs",
+      "line": 107,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2d199e4f9c51c5fb94595822655f7026",
+      "findingId": "FIND_00700",
+      "file": "crates/ctrl-engine/src/forge.rs",
+      "line": 399,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4ded85d2086d6cdfa12c6df1ed530af7",
+      "findingId": "FIND_00701",
+      "file": "crates/ctrl-engine/src/forge.rs",
+      "line": 465,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e5c5a160b236e545eed9be0e7ba0b752",
+      "findingId": "FIND_00714",
+      "file": "crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 7,
+      "riskKind": "process_command",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command whitelist audit",
+        "Input sanitization review"
+      ],
+      "reason": "External process execution is a trust boundary. Requires human security review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "475216680db7b201ba90557d4d20ad70",
+      "findingId": "FIND_00715",
+      "file": "crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 72,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "070bf0307fa56449ba0782210f20be21",
+      "findingId": "FIND_00716",
+      "file": "crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 91,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "694ef2a65233b9f6011f7de62bba9553",
+      "findingId": "FIND_00717",
+      "file": "crates/ctrl-engine/src/kernel_verify.rs",
+      "line": 104,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5f58a5cd1613d312b2465e37d34120d7",
+      "findingId": "FIND_00720",
+      "file": "crates/ctrl-engine/src/lean_emitter.rs",
+      "line": 114,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d8ba028fc5c358e1a4829a1b8b87aa0b",
+      "findingId": "FIND_00721",
+      "file": "crates/ctrl-engine/src/lean_server.rs",
+      "line": 80,
+      "riskKind": "command_new",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_002",
+        "INV_006",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Command source audit",
+        "Argument sanitization review"
+      ],
+      "reason": "Command construction requires review of input sources. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5d45bc7093b6ab5ff44ba35c5233953c",
+      "findingId": "FIND_00731",
+      "file": "crates/ctrl-engine/src/ledger.rs",
+      "line": 87,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "28dd4c0a887e51065115df99032d5566",
+      "findingId": "FIND_00732",
+      "file": "crates/ctrl-engine/src/ledger.rs",
+      "line": 91,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "530b50f6230891f17e1a17ba3b93a428",
+      "findingId": "FIND_00750",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 189,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "37fa5c9acd9850eb30ab987428beb06e",
+      "findingId": "FIND_00751",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 759,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d99b6994b06f456ccabdfd835638de9c",
+      "findingId": "FIND_00752",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 768,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b5a961fe278dd790d75f0a07964ee7dc",
+      "findingId": "FIND_00753",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 775,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0cf7d860978cdd10ed55ac92e1e3f762",
+      "findingId": "FIND_00754",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 788,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "dc6f5e88bda515e10803f8ae29713303",
+      "findingId": "FIND_00755",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 794,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6636826cae135830f3a71e63c1fefcb2",
+      "findingId": "FIND_00756",
+      "file": "crates/ctrl-engine/src/lemma_map.rs",
+      "line": 893,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "719cfbf0f6b2a5de269f03df3df4f921",
+      "findingId": "FIND_00768",
+      "file": "crates/ctrl-engine/src/mathnet_trainer.rs",
+      "line": 80,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "bda2361cf6f665252f894d6c60edd90e",
+      "findingId": "FIND_00776",
+      "file": "crates/ctrl-engine/src/proof_composer.rs",
+      "line": 103,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b9fd53d3ebf38b665a1d455a49ba873d",
+      "findingId": "FIND_00775",
+      "file": "crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_delete_file",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_013",
+        "INV_005",
+        "INV_006"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_005"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path scoping audit",
+        "Deletion safety review"
+      ],
+      "reason": "File deletion requires path validation and safety review. No automatic repair.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0358f178326dd5bdee0523bceeb5b2fb",
+      "findingId": "FIND_00777",
+      "file": "crates/ctrl-engine/src/proof_composer.rs",
+      "line": 111,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "1f590a5b32cef946e9cfa88024810f3a",
+      "findingId": "FIND_00810",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 67,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "41bcf21085c439ea4bc2d6f4565ff653",
+      "findingId": "FIND_00811",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 145,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "20b720d5296d2260f52613fd6ced4c39",
+      "findingId": "FIND_00812",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 146,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2957a71dd2fc8b60ad65615e7cb5f609",
+      "findingId": "FIND_00813",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 155,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "4444a49cfa0c44bd54e9e68b24f46014",
+      "findingId": "FIND_00814",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 155,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "0303ab43f150de24cdfa7068dacd8f93",
+      "findingId": "FIND_00815",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 156,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "167baf3812c2f437606e1079f07ef9ef",
+      "findingId": "FIND_00816",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 156,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "aeb649d572136c83c95bb97eaf90efab",
+      "findingId": "FIND_00817",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 172,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "37eda19ed36ad19aaa921edaf5850c29",
+      "findingId": "FIND_00818",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 172,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "9459bd8486279ccd89fcf5219ef27a1a",
+      "findingId": "FIND_00819",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 176,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "70653c4ae77fbf9227274b5cd0dc3171",
+      "findingId": "FIND_00820",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 176,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "f4427ba5183a604dc1c366b05bfc3eb5",
+      "findingId": "FIND_00821",
+      "file": "crates/ctrl-engine/src/queue_driven_attempt.rs",
+      "line": 176,
+      "riskKind": "filesystem_path_from_variable",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_017",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_INPUT_001",
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Variable source audit",
+        "Path injection analysis"
+      ],
+      "reason": "Filesystem operation on variable path is an injection risk. Requires human review.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c7cc346e780e6c3e3860edeafbd4da88",
+      "findingId": "FIND_00830",
+      "file": "crates/ctrl-engine/src/resolver.rs",
+      "line": 48,
+      "riskKind": "relative_traversal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_006",
+        "INV_016"
+      ],
+      "failureModeIds": [
+        "FAIL_MEM_004"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Path boundary audit",
+        "Sandbox escape analysis"
+      ],
+      "reason": "Relative traversal may escape intended directory scope. Security review required.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "af66ff625aadc21789980adcbdc3683a",
+      "findingId": "FIND_00059",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 56,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d5d6c65fefb8b43f09d78015ab372789",
+      "findingId": "FIND_00060",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 70,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8dd6df9f201f56d35ceac0dccb67b6b4",
+      "findingId": "FIND_00061",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 90,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "be3371ae69fdfb6a241de27f9efbd86a",
+      "findingId": "FIND_00062",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 107,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "5c70a41b91d66915123ed0995bae8afb",
+      "findingId": "FIND_00063",
+      "file": ".kilo/worktrees/certain-pea/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 158,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ce54a0bdf6b30061382879921a2dd48f",
+      "findingId": "FIND_00180",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 56,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e3441bf8723adb087974ffcb900f8f0b",
+      "findingId": "FIND_00181",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 70,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "a9416b2e9b46deb60bf2db89ca8aff2e",
+      "findingId": "FIND_00182",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 90,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "8c25e3586abed68568d450d1724c9e1d",
+      "findingId": "FIND_00183",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 107,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "ecc461159e4565132ea0a5c8c14887a2",
+      "findingId": "FIND_00184",
+      "file": ".kilo/worktrees/expensive-risk/Cohbit-CTRL/crates/ctrl-engine/src/gate_tests.rs",
+      "line": 158,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "6ff3ef00d1d49243394729391037cbc4",
+      "findingId": "FIND_00281",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/cohbit_lm_swarm_demo.rs",
+      "line": 171,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d76fc117f16fdce920bc1e176b73a424",
+      "findingId": "FIND_00282",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/cohbit_lm_swarm_demo.rs",
+      "line": 193,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "e6e3054aaa4bb8b7d579d66b21c3ec3d",
+      "findingId": "FIND_00295",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/learner_guided_trace_replay_benchmark.rs",
+      "line": 234,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "504e0c684c4ba5a7cb5444a58f524a2b",
+      "findingId": "FIND_00296",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/learner_guided_trace_replay_benchmark.rs",
+      "line": 252,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "59949509b52094bdd6844ca8a8cd2ce8",
+      "findingId": "FIND_00297",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/learner_guided_trace_replay_benchmark.rs",
+      "line": 268,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "2847752c52aab01d44af691e72c7345c",
+      "findingId": "FIND_00298",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/learner_guided_trace_replay_benchmark.rs",
+      "line": 285,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d4b49496c094c44f7580e095cad20502",
+      "findingId": "FIND_00299",
+      "file": "CohBit-primitive-review/rust/cohbit-language-swarm/examples/learner_guided_trace_replay_benchmark.rs",
+      "line": 301,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "29f6baf834528c3048a2f626fe5fc43a",
+      "findingId": "FIND_00315",
+      "file": "CohBit-primitive-review/rust/cohbit-native-lm/examples/vocabulary_scale_training_benchmark.rs",
+      "line": 133,
+      "riskKind": "panic_review_signal",
+      "fileContext": "example",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "eaec2193f180646bb4aeadb7f7a0babe",
+      "findingId": "FIND_00459",
+      "file": "CohBit-primitive-review/rust/cohbit/src/atom.rs",
+      "line": 395,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "7970d8db0a7c1cec2ff81ef0eecd2b6f",
+      "findingId": "FIND_00466",
+      "file": "CohBit-primitive-review/rust/cohbit/src/cohcat.rs",
+      "line": 297,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c1ebf6283ce37ff6f807fcd9d9442886",
+      "findingId": "FIND_00513",
+      "file": "CohBit-primitive-review/rust/cohbit/src/trace.rs",
+      "line": 447,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "a6a0a9647b0379b993b6d44ae341b4e3",
+      "findingId": "FIND_00538",
+      "file": "CohBit-primitive-review/rust/cohbit/src/ufe/atom_generator.rs",
+      "line": 411,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "38301cab09c53795c0ab5ccc37c30ce1",
+      "findingId": "FIND_00571",
+      "file": "CohBit-primitive-review/rust/cohbit/src/upt/critical_language_gate.rs",
+      "line": 622,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "41bcdeec1fb86db1a985e465b1a126a5",
+      "findingId": "FIND_00572",
+      "file": "CohBit-primitive-review/rust/cohbit/src/upt/critical_language_gate.rs",
+      "line": 629,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "3b0c1f53f0a0c019c4f33c3d94f9a953",
+      "findingId": "FIND_00687",
+      "file": "crates/ctrl-engine/src/external_tactic_generator.rs",
+      "line": 134,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "c55edf287deccb21cd59bc20c166fb5d",
+      "findingId": "FIND_00703",
+      "file": "crates/ctrl-engine/src/gate_tests.rs",
+      "line": 63,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "d6f09a12e98e4eaf43d1bab531be4ca3",
+      "findingId": "FIND_00704",
+      "file": "crates/ctrl-engine/src/gate_tests.rs",
+      "line": 80,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "40d45f4cf8e263a82451cccfd3d927f2",
+      "findingId": "FIND_00705",
+      "file": "crates/ctrl-engine/src/gate_tests.rs",
+      "line": 103,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "b853abb18c295d25e248ca9f5cb81f3a",
+      "findingId": "FIND_00706",
+      "file": "crates/ctrl-engine/src/gate_tests.rs",
+      "line": 123,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    },
+    {
+      "entryId": "44ebaa1307f3231b162927e575e571a4",
+      "findingId": "FIND_00707",
+      "file": "crates/ctrl-engine/src/gate_tests.rs",
+      "line": 174,
+      "riskKind": "panic_review_signal",
+      "fileContext": "src",
+      "invariantIds": [
+        "INV_010",
+        "INV_009"
+      ],
+      "failureModeIds": [
+        "FAIL_PANIC_001"
+      ],
+      "repairability": "human_review_required",
+      "requiredEvidence": [
+        "Panic boundary review",
+        "Recoverability assessment"
+      ],
+      "reason": "panic! terminates the process. Requires human judgment on recoverability.",
+      "mayGenerateProposal": false
+    }
+  ],
+  "summary": {
+    "total": 214,
+    "breakdown": {
+      "human_review_required": {
+        "count": 214,
+        "mayGen": 0
+      }
+    },
+    "mayGenerateProposal": false,
+    "constraintCheck": {
+      "unsafeBlockIsHumanReview": true,
+      "processCommandIsHumanReview": true,
+      "testPanicIsDiagnostic": true
+    }
+  }
+}

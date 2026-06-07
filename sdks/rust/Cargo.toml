@@ -1,0 +1,31 @@
+[package]
+name = "cohbit-copilot-sdk"
+version = "0.5.0"
+edition = "2021"
+description = "CohBit-Copilot Rust Conformance SDK — mirrors the canonical receipt model for cross-language identity testing. Not a production client library."
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+regex = "1.10"
+
+[[test]]
+name = "conformance"
+path = "tests/conformance.rs"
+
+[[bin]]
+name = "path_gate"
+path = "src/bin/path_gate.rs"
+
+[[bin]]
+name = "id_gate"
+path = "src/bin/id_gate.rs"
+
+[[bin]]
+name = "scanner_gate"
+path = "src/bin/scanner_gate.rs"
+
+[[bin]]
+name = "policy_gate"
+path = "src/bin/policy_gate.rs"

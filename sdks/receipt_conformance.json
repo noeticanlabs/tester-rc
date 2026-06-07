@@ -1,0 +1,306 @@
+[
+    {
+        "name": "identity",
+        "description": "Identity transition — V_pre = V_post, zero spend/defect/authority",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "409c43c3a2edd136e0bcfca1cce879ad2a272c56ff215f02eefc26ac95bc22f1"
+    },
+    {
+        "name": "exact_boundary",
+        "description": "Exact boundary — V_post + s = V_pre + d + a",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 11,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 1,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "e625b6e969a5b6131a63806c12e7c901833f36390ef088bc6cd056dc298753aa"
+    },
+    {
+        "name": "basic_spend",
+        "description": "Basic spend — V:10→9 with spend=1",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 9,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "5eb52c8f1e230e33275bd74ee6f8803db241af27260468a96658b76f7c4d1e6d"
+    },
+    {
+        "name": "fractional_spend",
+        "description": "Different fromState/toState — verifies hex hashes affect output",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 5,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "toState": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "7076905516593e534563d237ebc20be004ea346d07f49e59680f2492c217df10"
+    },
+    {
+        "name": "with_authority",
+        "description": "Authority injection — V:10→12 with authority=2",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 12,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 2,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "1e033c09710f532be7a008b0b9cd699411f1c86de27d6d9a9b4e84452664d74e"
+    },
+    {
+        "name": "full_wedge",
+        "description": "Full wedge — all numeric fields non-zero with distinct hashes",
+        "input": {
+            "valuationPre": {
+                "numer": 100,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 95,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "toState": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 5,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 1,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 1,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "b6dfebb2bcb97c7a343315ae022ceed9da03fc933506e4415aa8bae8e6897f17"
+    },
+    {
+        "name": "large_values",
+        "description": "Large values — V:1000→900, spend=100, defect=10",
+        "input": {
+            "valuationPre": {
+                "numer": 1000,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 900,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 100,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 10,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "7a2531378d877b96c4e37e45f74e360414d378df8222b508c99682562e2f0910"
+    },
+    {
+        "name": "negative_spend",
+        "description": "Negative spend — canonical serialization must preserve sign for determinism",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 9,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": -1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "hash_expected": "7df46bcd87233ac02d5bdd6ec8079300c2b0474e9a4a7760e14a27507fc49b3c"
+    }
+]

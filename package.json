@@ -1,0 +1,45 @@
+{
+  "name": "cohbit-copilot",
+  "version": "14.5.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "Lightweight offline deterministic teaching copilot for governed code changes with audit memory, atlas-backed pattern recognition, claim-boundary language control, and teaching capability. Governed patch execution through a seven-gate pipeline, integrated audit engine, TLT bidirectional language subsystem, and R21 processor runtime.",
+  "main": "dist/index.js",
+  "bin": {
+    "cohbit-copilot": "dist/cli.js"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:default": "vitest run",
+    "test:core": "vitest run tests packages",
+    "test:fast": "vitest run tests/conformance.test.ts tests/english.test.ts tests/hardening.test.ts tests/ledger.test.ts tests/proposer.test.ts tests/smoke.test.ts tests/symbols.test.ts tests/dep_graph.test.ts tests/workspace.test.ts tests/test_recommender.test.ts tests/patch_builder.test.ts tests/work.test.ts tests/repair.test.ts",
+    "test:integration": "vitest run tests/environment.test.ts tests/planner.test.ts",
+    "test:trials": "vitest run trials/",
+    "test:all": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/cli.ts demo starter",
+    "audit": "tsx src/cli.ts audit .",
+    "start": "tsx src/cli.ts start"
+  },
+  "keywords": [
+    "governed-computation",
+    "patch-pipeline",
+    "copilot",
+    "receipt-based",
+    "admissibility"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3",
+    "vitest": "^3.1.0"
+  }
+}

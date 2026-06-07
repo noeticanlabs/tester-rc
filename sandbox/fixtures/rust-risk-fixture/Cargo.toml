@@ -1,0 +1,7 @@
+[package]
+name = "rust-risk-fixture"
+version = "0.1.0"
+edition = "2021"
+description = "Controlled Rust fixture for CohBit-Copilot audit testing. Contains intentional risk patterns — not for production use."
+
+[dependencies]

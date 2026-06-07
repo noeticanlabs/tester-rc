@@ -1,0 +1,90 @@
+{
+  "receiptId": "HG_d6864ce5d563",
+  "version": "14.0.0",
+  "pipeline": "v14.0 — Human Learning Admission Gate",
+  "generatedAt": "2026-06-07T13:25:50.425Z",
+  "priorV13_8Id": "AR_468647dc66c6",
+  "summary": {
+    "totalCandidates": 3,
+    "pending": 3,
+    "admitted": 0,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "candidates": [
+    {
+      "findingId": "CC_TLT_1",
+      "sourceFile": "Noetican Code\\Noetican Bilingual Atlas.txt",
+      "originalType": "close_analogue",
+      "v13_6B_status": "cross_observed",
+      "evidenceScore": 2,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "cross_observed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "limitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "machineRecommendation": "admit_as_learning_record",
+      "humanDecision": "pending",
+      "humanReviewer": null,
+      "humanNotes": null,
+      "admissionReceiptId": null,
+      "admittedAt": null
+    },
+    {
+      "findingId": "CC_LAYERS_12",
+      "sourceFile": "Noetican Code\\Noetican Code layers.txt",
+      "originalType": "close_analogue",
+      "v13_6B_status": "strongly_structurally_confirmed",
+      "evidenceScore": 3,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "strongly_structurally_confirmed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "limitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "machineRecommendation": "admit_as_learning_record",
+      "humanDecision": "pending",
+      "humanReviewer": null,
+      "humanNotes": null,
+      "admissionReceiptId": null,
+      "admittedAt": null
+    },
+    {
+      "findingId": "CC_MATH_13",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics V.0.txt",
+      "originalType": "close_analogue",
+      "v13_6B_status": "cross_observed",
+      "evidenceScore": 2,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "cross_observed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "limitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "machineRecommendation": "admit_as_learning_record",
+      "humanDecision": "pending",
+      "humanReviewer": null,
+      "humanNotes": null,
+      "admissionReceiptId": null,
+      "admittedAt": null
+    }
+  ],
+  "attestation": "CohBit-Copilot v14.0 presents 3 recommended learning candidates for human admission review. No finding is admitted as learned without explicit human confirmation. Evidence remains capped at corpus_extracted. Admitted findings become admitted_learning_record — not canon, not verified, not proven. Admission may be withdrawn if reobservation diverges.",
+  "instructions": "This is the human admission gate. All machine gates (v13.4–v13.8) have been passed. For each candidate above, a human reviewer must set humanDecision to one of: admit, defer, reject. Admitted candidates receive an admission_receipt_id and become admitted_learning_record. This is the final step in the v13 learning pipeline. After admission, records may be re-evaluated for canon_candidate status in a future pipeline."
+}

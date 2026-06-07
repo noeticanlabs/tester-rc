@@ -1,0 +1,147 @@
+{
+  "receiptId": "RC_e3e773f1fc79",
+  "version": "14.5.0",
+  "pipeline": "v14.5 — Comprehensive Smoke Test",
+  "generatedAt": "2026-06-07T13:26:57.527Z",
+  "summary": {
+    "totalTests": 19,
+    "passed": 19,
+    "failed": 0
+  },
+  "results": [
+    {
+      "command": "npx tsx src/cli.ts init ",
+      "exitCode": 0,
+      "outputLines": 4,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts system explain",
+      "exitCode": 0,
+      "outputLines": 70,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts system about",
+      "exitCode": 0,
+      "outputLines": 4,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts access show",
+      "exitCode": 0,
+      "outputLines": 23,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts access set learner",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts start ",
+      "exitCode": 0,
+      "outputLines": 16,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts demo starter",
+      "exitCode": 0,
+      "outputLines": 101,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts help ",
+      "exitCode": 0,
+      "outputLines": 29,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts status nonexistent",
+      "exitCode": 1,
+      "outputLines": 0,
+      "passed": true,
+      "error": "Expected: Error: Proposal nonexistent not found\n"
+    },
+    {
+      "command": "npx tsx src/cli.ts inspect ",
+      "exitCode": 0,
+      "outputLines": 3,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts env ",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts recent ",
+      "exitCode": 0,
+      "outputLines": 10,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts curriculum list",
+      "exitCode": 0,
+      "outputLines": 4,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts lesson list",
+      "exitCode": 0,
+      "outputLines": 9,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts memory stability",
+      "exitCode": 0,
+      "outputLines": 24,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts network status",
+      "exitCode": 0,
+      "outputLines": 13,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts repair-review summary",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts repair-review list",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts repair-review show nonexistent",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "attestation": "CohBit-Copilot v14.5 smoke test verifies that all v14.2 onboarding commands, core gate commands, and v14.5 repair commands execute without unexpected errors. Commands expected to fail (status on nonexistent proposal, repair-review show on nonexistent) are marked as passing when they correctly return errors. No mutations occurred."
+}

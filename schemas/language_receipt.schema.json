@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CohBit Language Receipt",
+    "description": "Schema for the language-swarm receipt (LanguageReceipt).",
+    "type": "object",
+    "properties": {
+        "receipt_id": {
+            "type": "string",
+            "description": "Unique receipt identifier"
+        },
+        "candidate_id": {
+            "type": "integer",
+            "description": "Candidate ID",
+            "minimum": 0
+        },
+        "candidate_kind": {
+            "type": "string",
+            "description": "Language candidate kind"
+        },
+        "decision": {
+            "type": "string",
+            "enum": [
+                "Commit",
+                "FallbackCommit",
+                "Quarantine",
+                "RepairNeeded",
+                "Reject",
+                "AskClarifyingQuestion",
+                "Refuse",
+                "CiteRequired",
+                "DowngradeConfidence"
+            ]
+        },
+        "domain": {
+            "type": "string"
+        },
+        "safety_level": {
+            "type": "string"
+        },
+        "verifier_results": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "invariant_checks": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "committed_text": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "quarantined_text": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "claims_checked": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "valuation_before": {
+            "type": "number",
+            "minimum": 0
+        },
+        "valuation_after": {
+            "type": "number",
+            "minimum": 0
+        },
+        "spend": {
+            "type": "number",
+            "minimum": 0
+        },
+        "defect": {
+            "type": "number",
+            "minimum": 0
+        },
+        "authority": {
+            "type": "number",
+            "minimum": 0
+        },
+        "learner_score": {
+            "type": [
+                "number",
+                "null"
+            ]
+        },
+        "learner_decision": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "reply_loop_state": {
+            "type": [
+                "object",
+                "null"
+            ]
+        },
+        "hash": {
+            "type": "array",
+            "description": "SHA-256 hash as 32 raw bytes (serde default for [u8; 32])",
+            "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+            },
+            "minItems": 32,
+            "maxItems": 32
+        }
+    },
+    "required": [
+        "receipt_id",
+        "candidate_id",
+        "candidate_kind",
+        "decision",
+        "domain",
+        "valuation_before",
+        "valuation_after",
+        "spend",
+        "defect",
+        "authority"
+    ]
+}

@@ -1,0 +1,4 @@
+// @cohbit/math-atlas — M17 Governance / Versioning Layer
+export interface MathGovernanceRecord { recordId: string; entryId: string; changeType: 'created' | 'modified' | 'deprecated' | 'superseded'; claimStatus: 'draft' | 'reviewed' | 'canonical'; canonicalStatus: 'experimental' | 'canonical'; changedAt: string; }
+export const MATH_FORBIDDEN_COLLAPSES: string[] = ['similar structure ≠ same theorem', 'visual analogy ≠ proof', 'simulation evidence ≠ formal proof', 'code behavior ≠ mathematical truth'];
+export function createMathGovernanceRecord(params: { entryId: string; changeType: 'created' | 'modified' | 'deprecated' | 'superseded' }): MathGovernanceRecord { return { recordId: `MGOV_${Date.now().toString(36)}`, entryId: params.entryId, changeType: params.changeType, claimStatus: 'draft', canonicalStatus: 'experimental', changedAt: new Date().toISOString() }; }

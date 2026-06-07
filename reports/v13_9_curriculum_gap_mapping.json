@@ -1,0 +1,162 @@
+{
+  "receiptId": "GM_e44e871a0061",
+  "version": "13.9.0",
+  "pipeline": "v13.9 — Curriculum Gap Mapping",
+  "generatedAt": "2026-06-07T13:25:46.175Z",
+  "priorV13_7Id": "SC_1abcab1449be",
+  "summary": {
+    "totalGaps": 12,
+    "directMatch": 0,
+    "partialMatch": 2,
+    "requiresStub": 6,
+    "requiresAuthoring": 4,
+    "deferred": 0
+  },
+  "mappings": [
+    {
+      "moduleNum": 0,
+      "internalTopicKB": "module 0: code as state transition",
+      "internalDoctrine": "Code should first be understood as a proposed state transition, not as syntax.",
+      "externalMatch": "First principle learning\\# Module 0 — Code as State Transition.txt",
+      "matchConfidence": 0.2222222222222222,
+      "classification": "partial_match_found",
+      "recommendedAction": "Review the partial match. If content is sufficient, document the mapping. If not, create an explicit module stub file.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 1,
+      "internalTopicKB": "module 1: python safe file tool",
+      "internalDoctrine": "A Python script that touches the filesystem is not just beginner code.",
+      "externalMatch": "First principle learning\\# Module 1 — Python Safe File Tool.txt",
+      "matchConfidence": 0.1,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 1 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 2,
+      "internalTopicKB": "module 2: typescript receipt validator",
+      "internalDoctrine": "A receipt is not just data — it is typed, schema-enforced evidence.",
+      "externalMatch": "First principle learning\\# Module 2 — TypeScript Receipt Val.txt",
+      "matchConfidence": 0.14285714285714285,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 2 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 3,
+      "internalTopicKB": "module 3: secure coding and cia lab",
+      "internalDoctrine": "Confidentiality, Integrity, and Availability are concrete constraints on every state transition.",
+      "externalMatch": "First principle learning\\# Module 3 — Secure Coding.txt",
+      "matchConfidence": 0.1,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 3 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 4,
+      "internalTopicKB": "module 4: sql persistence, audit tables, and rollback",
+      "internalDoctrine": "Database state is persistent, shared, and consequential.",
+      "externalMatch": "First principle learning\\# Module 4 — SQL Persistence, Audit.txt",
+      "matchConfidence": 0.125,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 4 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 5,
+      "internalTopicKB": "module 5: resource-aware and constrained computing",
+      "internalDoctrine": "Every computation consumes resources. Ungoverned resource consumption is a DoS vulnerability.",
+      "externalMatch": "First principle learning\\# Module 5 — Resource-Aware and Con.txt",
+      "matchConfidence": 0,
+      "classification": "requires_manual_authoring",
+      "recommendedAction": "Module 5 has no clear external counterpart. Human author must create the curriculum module file from scratch or document why the internal-only module is sufficient.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 6,
+      "internalTopicKB": "module 6: governed apis, tool calls, and automation",
+      "internalDoctrine": "An API call is not a free action — it is a governed transition across a trust boundary.",
+      "externalMatch": "First principle learning\\# Module 6 — Governed APIs, Tool Ca.txt",
+      "matchConfidence": 0.1,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 6 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 7,
+      "internalTopicKB": "module 7: multi-language transition interoperability",
+      "internalDoctrine": "Data crossing a language boundary must preserve meaning, type, and trust.",
+      "externalMatch": "First principle learning\\# Module 7 — Multi-Language Transit.txt",
+      "matchConfidence": 0,
+      "classification": "requires_manual_authoring",
+      "recommendedAction": "Module 7 has no clear external counterpart. Human author must create the curriculum module file from scratch or document why the internal-only module is sufficient.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 8,
+      "internalTopicKB": "module 8: rust high-integrity verifier",
+      "internalDoctrine": "Rust ownership model enforces memory safety at compile time.",
+      "externalMatch": "First principle learning\\# Module 8 — Rust High-Integrity Ve.txt",
+      "matchConfidence": 0.125,
+      "classification": "requires_external_module_stub",
+      "recommendedAction": "Create a stub file for Module 8 in the curriculum corpus with the internal TOPIC_KB doctrine as the starting point.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 9,
+      "internalTopicKB": "module 9: lean proof obligations and ctrl theorem repair",
+      "internalDoctrine": "Formal verification proves that code satisfies its specification for all possible inputs.",
+      "externalMatch": "First principle learning\\# Module 9 — Lean Proof Obligations.txt",
+      "matchConfidence": 0,
+      "classification": "requires_manual_authoring",
+      "recommendedAction": "Module 9 has no clear external counterpart. Human author must create the curriculum module file from scratch or document why the internal-only module is sufficient.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 10,
+      "internalTopicKB": "module 10: formal-to-runtime bridge and atlas memory",
+      "internalDoctrine": "A verified specification is valuable. Verified code extracted from that specification is more valuable.",
+      "externalMatch": "First principle learning\\# Module 10 — Formal-to-Runtime Bri.txt",
+      "matchConfidence": 0,
+      "classification": "requires_manual_authoring",
+      "recommendedAction": "Module 10 has no clear external counterpart. Human author must create the curriculum module file from scratch or document why the internal-only module is sufficient.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    },
+    {
+      "moduleNum": 11,
+      "internalTopicKB": "module 11: cicd gates, release discipline, and governed packages",
+      "internalDoctrine": "A release is not a build artifact — it is a governed transition.",
+      "externalMatch": "First principle learning\\# Module 11 — CICD Gates, Release D.txt",
+      "matchConfidence": 0.2222222222222222,
+      "classification": "partial_match_found",
+      "recommendedAction": "Review the partial match. If content is sufficient, document the mapping. If not, create an explicit module stub file.",
+      "evidenceCeiling": "corpus_extracted",
+      "reviewStatus": "pending_human_review",
+      "applyStatus": "not_applied"
+    }
+  ],
+  "attestation": "CohBit-Copilot v13.9 maps 12 M0-M11 Teaching KB module gaps against the external curriculum corpus. Each gap is classified by match quality and receives an advisory recommended action. No source files are modified. No curriculum files are created. All proposed actions require separate human authorization. Evidence remains capped at corpus_extracted."
+}

@@ -1,0 +1,23 @@
+{
+    "name": "@cohbit/code-atlas",
+    "version": "0.0.0",
+    "description": "Noetican Code Invariant Atlas — governed multilingual code memory layer for CohBit-Copilot. Classifies, maps, and retrieves computational invariants, transitions, and cross-language code knowledge.",
+    "type": "module",
+    "main": "src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "code-atlas",
+        "invariant",
+        "transition",
+        "cross-language",
+        "receipt",
+        "governed-memory"
+    ],
+    "license": "ISC"
+}

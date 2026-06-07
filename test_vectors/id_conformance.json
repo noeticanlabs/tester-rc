@@ -1,0 +1,132 @@
+[
+    {
+        "type": "finding",
+        "description": "Basic finding ID — unwrap in gates.ts",
+        "input": {
+            "file": "src/gates.ts",
+            "line": 113,
+            "riskKind": "unwrap_review_signal"
+        },
+        "expectedId": "c2b03b7205430aad"
+    },
+    {
+        "type": "finding",
+        "description": "Finding ID — unsafe block in production",
+        "input": {
+            "file": "src/path_safety.ts",
+            "line": 72,
+            "riskKind": "unsafe_block"
+        },
+        "expectedId": "c3c86a6cf7d447a8"
+    },
+    {
+        "type": "finding",
+        "description": "Finding ID — filesystem delete",
+        "input": {
+            "file": "src/fs.ts",
+            "line": 200,
+            "riskKind": "filesystem_delete_file"
+        },
+        "expectedId": "05ed7fd3356fb9f4"
+    },
+    {
+        "type": "finding",
+        "description": "Finding ID — process command",
+        "input": {
+            "file": "src/lang.ts",
+            "line": 45,
+            "riskKind": "process_command"
+        },
+        "expectedId": "7b7eee2902b24a96"
+    },
+    {
+        "type": "finding",
+        "description": "Finding ID — same input produces same ID (dedup test)",
+        "input": {
+            "file": "src/gates.ts",
+            "line": 113,
+            "riskKind": "unwrap_review_signal"
+        },
+        "expectedId": "c2b03b7205430aad"
+    },
+    {
+        "type": "obligation",
+        "description": "Basic obligation ID",
+        "input": {
+            "file": "src/gates.ts",
+            "line": 113,
+            "riskKind": "unwrap_review_signal"
+        },
+        "expectedId": "OBL_3289542adc7dda612d9a"
+    },
+    {
+        "type": "obligation",
+        "description": "Obligation ID — unsafe block",
+        "input": {
+            "file": "src/path_safety.ts",
+            "line": 72,
+            "riskKind": "unsafe_block"
+        },
+        "expectedId": "OBL_5b78f78975cc21a940f3"
+    },
+    {
+        "type": "obligation",
+        "description": "Obligation ID — filesystem",
+        "input": {
+            "file": "src/fs.ts",
+            "line": 200,
+            "riskKind": "filesystem_delete_file"
+        },
+        "expectedId": "OBL_c59576d655e057435c01"
+    },
+    {
+        "type": "obligation",
+        "description": "Obligation ID — same input produces same ID",
+        "input": {
+            "file": "src/gates.ts",
+            "line": 113,
+            "riskKind": "unwrap_review_signal"
+        },
+        "expectedId": "OBL_3289542adc7dda612d9a"
+    },
+    {
+        "type": "processor",
+        "description": "Basic processor ID",
+        "input": {
+            "workflowId": "rust_risk_scan",
+            "processorKind": "heuristic",
+            "startTime": "2026-06-06T00:00:00.000Z"
+        },
+        "expectedId": "643c399987e542a8"
+    },
+    {
+        "type": "processor",
+        "description": "Processor ID — content read",
+        "input": {
+            "workflowId": "content_read",
+            "processorKind": "deterministic",
+            "startTime": "2026-06-06T01:00:00.000Z"
+        },
+        "expectedId": "e49e675d35399cd2"
+    },
+    {
+        "type": "processor",
+        "description": "Processor ID — receipt emit",
+        "input": {
+            "workflowId": "receipt_emit",
+            "processorKind": "deterministic",
+            "startTime": "2026-06-06T02:00:00.000Z"
+        },
+        "expectedId": "f8ee92a258ec90d5"
+    },
+    {
+        "type": "processor",
+        "description": "Processor ID — same input produces same ID",
+        "input": {
+            "workflowId": "rust_risk_scan",
+            "processorKind": "heuristic",
+            "startTime": "2026-06-06T00:00:00.000Z"
+        },
+        "expectedId": "643c399987e542a8"
+    }
+]

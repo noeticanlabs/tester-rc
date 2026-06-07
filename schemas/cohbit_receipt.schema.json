@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CohBit Core Receipt",
+    "description": "Schema for the atomic CohBit transition receipt (CohBitInput / CohBit).",
+    "type": "object",
+    "properties": {
+        "bit_id": {
+            "type": "string",
+            "description": "Unique receipt identifier (Hash32 hex)",
+            "pattern": "^[0-9a-fA-F]{64}$"
+        },
+        "valuation_pre": {
+            "type": "object",
+            "description": "Rational64 valuation before transition",
+            "properties": {
+                "numer": {
+                    "type": "integer"
+                },
+                "denom": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "numer",
+                "denom"
+            ]
+        },
+        "valuation_post": {
+            "type": "object",
+            "description": "Rational64 valuation after transition",
+            "properties": {
+                "numer": {
+                    "type": "integer"
+                },
+                "denom": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "numer",
+                "denom"
+            ]
+        },
+        "wedge": {
+            "type": "object",
+            "description": "Wedge input with spend, defect, authority",
+            "properties": {
+                "spend": {
+                    "type": "object",
+                    "properties": {
+                        "numer": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "denom": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "required": [
+                        "numer",
+                        "denom"
+                    ]
+                },
+                "defect": {
+                    "type": "object",
+                    "properties": {
+                        "numer": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "denom": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "required": [
+                        "numer",
+                        "denom"
+                    ]
+                },
+                "authority": {
+                    "type": "object",
+                    "properties": {
+                        "numer": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "denom": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "required": [
+                        "numer",
+                        "denom"
+                    ]
+                },
+                "from_state": {
+                    "type": "string",
+                    "description": "State hash before transition",
+                    "pattern": "^[0-9a-fA-F]{64}$"
+                },
+                "to_state": {
+                    "type": "string",
+                    "description": "State hash after transition (if accepted)",
+                    "pattern": "^[0-9a-fA-F]{64}$"
+                }
+            },
+            "required": [
+                "spend",
+                "defect",
+                "authority",
+                "from_state",
+                "to_state"
+            ]
+        }
+    },
+    "required": [
+        "bit_id",
+        "valuation_pre",
+        "valuation_post",
+        "wedge"
+    ]
+}

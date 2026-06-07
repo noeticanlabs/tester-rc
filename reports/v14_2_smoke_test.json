@@ -1,0 +1,70 @@
+{
+  "receiptId": "RC_7aa290ef35e3",
+  "version": "14.2.0",
+  "pipeline": "v14.2 — External Tester RC Smoke Test",
+  "generatedAt": "2026-06-07T13:26:34.332Z",
+  "summary": {
+    "totalTests": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "results": [
+    {
+      "command": "npx tsx src/cli.ts init ",
+      "exitCode": 0,
+      "outputLines": 4,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts system explain",
+      "exitCode": 0,
+      "outputLines": 70,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts system about",
+      "exitCode": 0,
+      "outputLines": 4,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts access show",
+      "exitCode": 0,
+      "outputLines": 23,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts access set learner",
+      "exitCode": 0,
+      "outputLines": 1,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts start ",
+      "exitCode": 0,
+      "outputLines": 16,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts demo starter",
+      "exitCode": 0,
+      "outputLines": 101,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npx tsx src/cli.ts help ",
+      "exitCode": 0,
+      "outputLines": 29,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "attestation": "CohBit-Copilot v14.2 smoke test verifies that all new commands (init, system, access, start, demo) execute without errors. This does not verify output correctness, only that the CLI handlers execute successfully. Default profile is learner. No mutations occurred."
+}

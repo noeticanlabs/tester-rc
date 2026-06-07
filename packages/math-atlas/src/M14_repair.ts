@@ -1,0 +1,5 @@
+// @cohbit/math-atlas — M14 Repair / Clarification Layer
+export type MathRepairType = 'DefineTerm' | 'AddAssumption' | 'WeakenClaim' | 'StrengthenEvidence' | 'SeparateAnalogyFromProof' | 'AddCounterexample' | 'SplitModelMapping' | 'FormalizeStatement' | 'AddProofObligation' | 'DeclareMappingLimit';
+export const MATH_REPAIR_TYPES: MathRepairType[] = ['DefineTerm', 'AddAssumption', 'WeakenClaim', 'StrengthenEvidence', 'SeparateAnalogyFromProof', 'AddCounterexample', 'SplitModelMapping', 'FormalizeStatement', 'AddProofObligation', 'DeclareMappingLimit'];
+export interface MathRepairRecord { repairId: string; linkedReceiptId: string; failureReason: string; repairType: MathRepairType; requiredAction: string; status: 'open' | 'in_progress' | 'completed'; createdAt: string; }
+export function createMathRepair(params: { linkedReceiptId: string; failureReason: string; repairType: MathRepairType; requiredAction: string }): MathRepairRecord { return { repairId: `MREPAIR_${Date.now().toString(36)}`, ...params, status: 'open', createdAt: new Date().toISOString() }; }

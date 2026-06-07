@@ -1,0 +1,335 @@
+{
+    "auditId": "FULL_SYSTEM_2026-06-03",
+    "ranAt": "2026-06-03T23:30:00Z",
+    "target": "c:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot",
+    "evidenceLevel": "surface_detected",
+    "mutationStatus": "none (audit is observation-only)",
+    "commitStatus": "not_applicable",
+    "overallStatus": "healthy",
+    "summary": {
+        "testFilesTotal": 94,
+        "testFilesPassed": 60,
+        "testFilesFailed": 34,
+        "testFilesFailedReason": "trial runners without vitest test suites",
+        "testsTotal": 797,
+        "testsPassed": 792,
+        "testsFailed": 5,
+        "testsPassRate": 0.994,
+        "testDurationMs": 30710,
+        "sourceFilesAnalyzed": 250,
+        "maintenanceDebtMarkers": 0,
+        "modulesInSrc": 26,
+        "packagesAnalyzed": 5
+    },
+    "architecture": {
+        "status": "strong",
+        "circularImports": 0,
+        "packageImportDiscipline": "correct (src→packages, no reverse)",
+        "externalDeps": "node: stdlib only",
+        "architectureDocAlignment": "partial",
+        "modulesMissingFromArchDoc": [
+            "teaching.ts",
+            "integrated_pipeline.ts",
+            "atlas_integration.ts",
+            "atlas_repair_routing.ts",
+            "retrieval_filter.ts",
+            "human_review_receipt.ts",
+            "finding_to_proposal.ts",
+            "dep_graph.ts",
+            "symbols.ts",
+            "english.ts",
+            "planner.ts",
+            "test_recommender.ts",
+            "patch_builder.ts",
+            "repair_planner.ts",
+            "environment.ts",
+            "ledger_lock.ts",
+            "workspace.ts"
+        ]
+    },
+    "testCoverage": {
+        "strongCoverage": [
+            "receipt.ts",
+            "gates.ts",
+            "english.ts",
+            "path_safety.ts",
+            "atomic_write.ts",
+            "all packages (code-atlas, tlt-atlas, math-atlas, resource, tooling)",
+            "sdks (python + rust conformance)"
+        ],
+        "adequateCoverage": [
+            "ledger.ts",
+            "fs.ts",
+            "lang.ts",
+            "proposer.ts",
+            "workspace.ts",
+            "environment.ts",
+            "symbols.ts",
+            "dep_graph.ts",
+            "planner.ts",
+            "patch_builder.ts",
+            "repair_planner.ts",
+            "test_recommender.ts",
+            "atlas_bridge.ts"
+        ],
+        "gaps": [
+            {
+                "module": "teaching.ts",
+                "coverage": "trial-only",
+                "severity": "medium",
+                "findingId": "F-T1"
+            },
+            {
+                "module": "integrated_pipeline.ts",
+                "coverage": "trial-only",
+                "severity": "low",
+                "findingId": "F-T2"
+            },
+            {
+                "module": "cli.ts",
+                "coverage": "smoke-only",
+                "severity": "low",
+                "findingId": "F-T3"
+            }
+        ]
+    },
+    "security": {
+        "admissibilityLawCompliance": "enforced",
+        "gatePipeline": {
+            "proposeGate": "enforced",
+            "reviewGate": "function-call (not cryptographic)",
+            "authorizeGate": "enforced",
+            "applyGate": "enforced",
+            "testGate": "enforced",
+            "rollbackGate": "enforced",
+            "receiptGate": "enforced"
+        },
+        "pathSafety": "enforced (symlink resolution, boundary check, traversal prevention)",
+        "atomicWriteSafety": "enforced (temp write, rename, hash verification)",
+        "ledgerIntegrity": "enforced (append-only JSONL, corruption skip, SHA-256, lock)"
+    },
+    "tltSubsystem": {
+        "claimGuard": "enforced (strength ladder, downgrade generation)",
+        "voiceDiscipline": "enforced (cannot upgrade graph status)",
+        "publicInternalBoundary": "enforced (term leak detection, rewrite)",
+        "summaryGenerator": "5 modes validated, all pass canonSafety"
+    },
+    "resourceGovernance": {
+        "layersTotal": 21,
+        "layersImplemented": 21,
+        "budgetWiredToGates": false,
+        "obligationLifecycle": "enforced (reconciliation, escalation, dashboard)"
+    },
+    "maintenanceDebt": {
+        "todoMarkers": 0,
+        "fixmeMarkers": 0,
+        "hackMarkers": 0,
+        "xxxMarkers": 0,
+        "deprecatedCode": "none",
+        "commentedOutCode": "none significant"
+    },
+    "findings": [
+        {
+            "id": "F-A1",
+            "category": "architecture",
+            "severity": "low",
+            "priority": "P1",
+            "module": "docs/architecture.md",
+            "title": "Architecture document module map incomplete",
+            "description": "Module map lists 8 core modules; actual src/ contains 26. Missing 18 modules added in v2.0–v10.x.",
+            "obligationId": "OBL-A1"
+        },
+        {
+            "id": "F-A2",
+            "category": "architecture",
+            "severity": "low",
+            "priority": "P2",
+            "module": "src/integrated_pipeline.ts",
+            "title": "Integrated pipeline has narrow scope",
+            "description": "Pipeline only audits Rust fixtures. TypeScript, TLT, math-atlas, resource packages are unaudited by the automated pipeline.",
+            "obligationId": "OBL-P1"
+        },
+        {
+            "id": "F-T1",
+            "category": "test_coverage",
+            "severity": "medium",
+            "priority": "P1",
+            "module": "src/teaching.ts",
+            "title": "No unit tests for teaching subsystem",
+            "description": "Teaching functions exercised only through trial runners. No unit-level test coverage.",
+            "obligationId": "OBL-T1"
+        },
+        {
+            "id": "F-T2",
+            "category": "test_coverage",
+            "severity": "low",
+            "priority": "P3",
+            "module": "src/integrated_pipeline.ts",
+            "title": "No direct unit tests for runIntegratedAudit",
+            "description": "Orchestration function tested only through trial runner. Individual phases have unit tests in @cohbit/tooling.",
+            "obligationId": "OBL-T2"
+        },
+        {
+            "id": "F-T3",
+            "category": "test_coverage",
+            "severity": "low",
+            "priority": "P3",
+            "module": "src/cli.ts",
+            "title": "CLI has smoke-only test coverage",
+            "description": "11 CLI commands have no command-level test coverage. Only smoke.test.ts exercises the CLI.",
+            "obligationId": "OBL-T3"
+        },
+        {
+            "id": "F-S1",
+            "category": "security",
+            "severity": "medium",
+            "priority": "P2",
+            "module": "src/gates.ts",
+            "title": "ReviewGate is function-call based, not cryptographic",
+            "description": "Review sets a reviewedBy string without cryptographic attestation. Acceptable for current trust model but insufficient for adversarial model.",
+            "obligationId": "OBL-S1"
+        },
+        {
+            "id": "F-S2",
+            "category": "security",
+            "severity": "low",
+            "priority": "P3",
+            "module": "src/gates.ts",
+            "title": "No rate limiting on gate pipeline",
+            "description": "Resource package (R16, R17) provides throttling mechanisms but they are not wired into gates.ts.",
+            "obligationId": "OBL-S2"
+        },
+        {
+            "id": "F-TLT1",
+            "category": "tlt",
+            "severity": "low",
+            "priority": "P3",
+            "module": "packages/tlt-atlas/T_summary_generator.ts",
+            "title": "Summary generator has no CLI path",
+            "description": "No generate-summary CLI command. Invoked programmatically from teaching.ts and trial runners only.",
+            "obligationId": "OBL-TLT1"
+        },
+        {
+            "id": "F-R1",
+            "category": "resource",
+            "severity": "low",
+            "priority": "P3",
+            "module": "src/gates.ts",
+            "title": "Budget enforcement not wired to gates",
+            "description": "R1_compute provides budget creation/authorization but gate pipeline does not check or enforce compute budgets.",
+            "obligationId": "OBL-S2"
+        },
+        {
+            "id": "F-X1",
+            "category": "cross_cutting",
+            "severity": "medium",
+            "priority": "P1",
+            "module": "docs/architecture.md",
+            "title": "Architecture document frozen at v1.0/v9.x",
+            "description": "Architecture doc not updated to reflect v2.0–v10.x core modules or resource/tooling/math-atlas packages.",
+            "obligationId": "OBL-A1"
+        },
+        {
+            "id": "F-X2",
+            "category": "cross_cutting",
+            "severity": "low",
+            "priority": "P3",
+            "module": "trials/v0.2-trial.ts, trials/v0.4-lang-trials.ts",
+            "title": "Trial runners create temp files outside workspace",
+            "description": "os.tmpdir() is outside workspace root. Path safety correctly rejects these, causing 5 test failures.",
+            "obligationId": "OBL-X2"
+        },
+        {
+            "id": "F-X3",
+            "category": "cross_cutting",
+            "severity": "low",
+            "priority": "P2",
+            "module": "packages/*/",
+            "title": "No package-level README files",
+            "description": "5 packages have package.json but no README describing purpose, API, or layer structure.",
+            "obligationId": "OBL-X3"
+        }
+    ],
+    "obligations": [
+        {
+            "id": "OBL-A1",
+            "priority": "P1",
+            "severity": "medium",
+            "category": "documentation",
+            "recommendedAction": "Update architecture document module map to include all 26 src/ modules and all 5 package atlases"
+        },
+        {
+            "id": "OBL-T1",
+            "priority": "P1",
+            "severity": "medium",
+            "category": "test_coverage",
+            "recommendedAction": "Add unit tests for teach(), buildCurriculum(), and session management"
+        },
+        {
+            "id": "OBL-S1",
+            "priority": "P2",
+            "severity": "medium",
+            "category": "security",
+            "recommendedAction": "Consider adding optional cryptographic signature verification for review attestation"
+        },
+        {
+            "id": "OBL-P1",
+            "priority": "P2",
+            "severity": "medium",
+            "category": "coverage",
+            "recommendedAction": "Extend integrated pipeline to audit TypeScript, TLT, math-atlas, and resource packages"
+        },
+        {
+            "id": "OBL-X3",
+            "priority": "P2",
+            "severity": "low",
+            "category": "documentation",
+            "recommendedAction": "Add README to each package describing its layer, API, and dependencies"
+        },
+        {
+            "id": "OBL-T2",
+            "priority": "P3",
+            "severity": "low",
+            "category": "test_coverage",
+            "recommendedAction": "Add isolated unit test for runIntegratedAudit()"
+        },
+        {
+            "id": "OBL-T3",
+            "priority": "P3",
+            "severity": "low",
+            "category": "test_coverage",
+            "recommendedAction": "Add command-level tests for all 11 CLI commands"
+        },
+        {
+            "id": "OBL-S2",
+            "priority": "P3",
+            "severity": "low",
+            "category": "security",
+            "recommendedAction": "Wire R16/R17 resource throttling into gate pipeline"
+        },
+        {
+            "id": "OBL-TLT1",
+            "priority": "P3",
+            "severity": "low",
+            "category": "tlt",
+            "recommendedAction": "Add generate-summary CLI command"
+        },
+        {
+            "id": "OBL-X2",
+            "priority": "P3",
+            "severity": "low",
+            "category": "test_infrastructure",
+            "recommendedAction": "Move temp file creation to workspace root or mock path_safety in trial runners"
+        }
+    ],
+    "resourceBudget": {
+        "computeUsed": 31,
+        "computeBudget": 300,
+        "computeUtilizationPercent": 10.3,
+        "testFiles": 94,
+        "testsExecuted": 797,
+        "testsPassed": 792,
+        "testsFailed": 5,
+        "sourceFilesAnalyzed": 250
+    }
+}

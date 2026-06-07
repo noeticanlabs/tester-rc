@@ -1,0 +1,942 @@
+{
+  "receiptId": "XR_cf566347dd23",
+  "version": "13.6A.0",
+  "pipeline": "v13.6A — Cross-Repo Structural Confirmation (Tier A)",
+  "generatedAt": "2026-06-07T13:25:54.617Z",
+  "repoScans": {
+    "ctrl": {
+      "repoKey": "ctrl",
+      "repoLabel": "CohBit-CTRL",
+      "rootPath": "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL",
+      "totalFiles": 12820,
+      "totalDirs": 0,
+      "topLevelDirs": [
+        ".github",
+        "benches",
+        "Coh",
+        "CohBit-primitive-review",
+        "crates",
+        "ctrl_out",
+        "docs",
+        "lean",
+        "python_lib",
+        "receipts",
+        "reports",
+        "scripts",
+        "src",
+        "target",
+        "tests"
+      ],
+      "topLevelFiles": [
+        "0",
+        "Cargo.lock",
+        "Cargo.toml",
+        "fix_qda.py",
+        "LICENSE",
+        "README.md"
+      ],
+      "extensionDistribution": {
+        "(no ext)": 39,
+        ".lock": 3,
+        ".toml": 16,
+        ".py": 55,
+        ".md": 102,
+        ".json": 90,
+        ".ps1": 12,
+        ".sh": 18,
+        ".pyc": 7,
+        ".txt": 30,
+        ".lean": 4886,
+        ".jsonl": 32,
+        ".olean": 990,
+        ".trace": 992,
+        ".code-snippets": 3,
+        ".ilean": 981,
+        ".hash": 2943,
+        ".tmp": 3,
+        ".c": 982,
+        ".yml": 36,
+        ".js": 16,
+        ".tsx": 15,
+        ".ts": 1,
+        ".dsl": 3,
+        ".sty": 3,
+        ".png": 3,
+        ".gz": 1,
+        ".sub": 3,
+        ".so": 1,
+        ".yaml": 4,
+        ".bib": 1,
+        ".in": 1,
+        ".rs": 532,
+        ".cff": 1,
+        ".training": 1,
+        ".html": 2,
+        ".csv": 2,
+        ".proptest-regressions": 1,
+        ".wgsl": 4,
+        ".pdf": 4,
+        ".h": 1
+      },
+      "languagePresence": {
+        "rust": true,
+        "lean": true,
+        "typescript": true,
+        "python": true,
+        "javascript": true,
+        "markdown": true,
+        "toml": true,
+        "json": true
+      },
+      "directoryPresence": {
+        "docs": true,
+        "src": true,
+        "tests": true,
+        "reports": true,
+        "receipts": true,
+        "schemas": true,
+        "spec": false,
+        "test_vectors": true,
+        "scripts": true,
+        "benches": true,
+        "lean": true,
+        "rust": true,
+        "python_lib": true,
+        "sdks": false,
+        "packages": false,
+        "reference-verifier": false,
+        "crates": true,
+        "audit": true,
+        "visualizer": true,
+        "assets": true,
+        "sandbox": false,
+        "trials": false,
+        "examples": true
+      },
+      "layerPatterns": [
+        {
+          "prefix": "L",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L1Space.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L2Space.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL\\lean\\.lake\\packages\\mathlib\\Mathlib\\Analysis\\InnerProductSpace\\l2Space.lean"
+          ]
+        },
+        {
+          "prefix": "T",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL\\lean\\.lake\\packages\\mathlib\\Mathlib\\Topology\\Order\\T5.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-CTRL\\lean\\.lake\\packages\\mathlib\\Mathlib\\Topology\\ContinuousFunction\\T0Sierpinski.lean"
+          ]
+        }
+      ],
+      "atlasStructures": [
+        "C:/Users"
+      ],
+      "verifierPresence": false,
+      "receiptInfrastructure": true,
+      "specPresence": false,
+      "cicdPresence": true,
+      "sdkPresence": true
+    },
+    "air": {
+      "repoKey": "air",
+      "repoLabel": "AIR-prime",
+      "rootPath": "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime",
+      "totalFiles": 9621,
+      "totalDirs": 0,
+      "topLevelDirs": [
+        ".github",
+        "assets",
+        "audit",
+        "docs",
+        "lean",
+        "rust",
+        "scripts",
+        "test_vectors",
+        "visualizer"
+      ],
+      "topLevelFiles": [
+        "CITATION.cff",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "Makefile",
+        "README.md",
+        "SPEC.md",
+        "zenodo.json"
+      ],
+      "extensionDistribution": {
+        "(no ext)": 49,
+        ".cff": 1,
+        ".md": 60,
+        ".json": 33,
+        ".html": 3,
+        ".sh": 14,
+        ".lock": 1,
+        ".toml": 13,
+        ".rs": 85,
+        ".py": 27,
+        ".yml": 63,
+        ".lean": 9176,
+        ".hash": 1,
+        ".trace": 5,
+        ".js": 24,
+        ".tsx": 18,
+        ".ts": 2,
+        ".dsl": 4,
+        ".sty": 4,
+        ".png": 2,
+        ".olean": 3,
+        ".yaml": 18,
+        ".sub": 3,
+        ".txt": 2,
+        ".bib": 1,
+        ".code-snippets": 4,
+        ".dot": 1,
+        ".pdf": 4
+      },
+      "languagePresence": {
+        "rust": true,
+        "lean": true,
+        "typescript": true,
+        "python": true,
+        "javascript": true,
+        "markdown": true,
+        "toml": true,
+        "json": true
+      },
+      "directoryPresence": {
+        "docs": true,
+        "src": true,
+        "tests": true,
+        "reports": false,
+        "receipts": false,
+        "schemas": false,
+        "spec": false,
+        "test_vectors": true,
+        "scripts": true,
+        "benches": false,
+        "lean": true,
+        "rust": true,
+        "python_lib": false,
+        "sdks": false,
+        "packages": false,
+        "reference-verifier": false,
+        "crates": false,
+        "audit": true,
+        "visualizer": true,
+        "assets": true,
+        "sandbox": false,
+        "trials": false,
+        "examples": true
+      },
+      "layerPatterns": [
+        {
+          "prefix": "L",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Integral\\Bochner\\L1.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L2Space.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L1Space\\AEEqFun.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L1Space\\HasFiniteIntegral.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\MeasureTheory\\Function\\L1Space\\Integrable.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\Analysis\\InnerProductSpace\\l2Space.lean"
+          ]
+        },
+        {
+          "prefix": "T",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\Topology\\Order\\T5.lean",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\AIR-prime\\lean\\.lake\\packages\\mathlib\\Mathlib\\Topology\\ContinuousMap\\T0Sierpinski.lean"
+          ]
+        }
+      ],
+      "atlasStructures": [
+        "C:/Users"
+      ],
+      "verifierPresence": false,
+      "receiptInfrastructure": false,
+      "specPresence": true,
+      "cicdPresence": true,
+      "sdkPresence": false
+    },
+    "copilot": {
+      "repoKey": "copilot",
+      "repoLabel": "Cohbit-Copilot",
+      "rootPath": "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot",
+      "totalFiles": 1574,
+      "totalDirs": 0,
+      "topLevelDirs": [
+        "dist",
+        "docs",
+        "node_modules",
+        "packages",
+        "reference-verifier",
+        "reports",
+        "sandbox",
+        "schemas",
+        "sdks",
+        "spec",
+        "src",
+        "tests",
+        "test_vectors",
+        "trials"
+      ],
+      "topLevelFiles": [
+        "0)",
+        "CHANGELOG.md",
+        "l.lessonId",
+        "package-lock.json",
+        "package.json",
+        "README.md",
+        "tsconfig.json",
+        "vitest.config.ts"
+      ],
+      "extensionDistribution": {
+        "(no ext)": 5,
+        ".md": 79,
+        ".lessonid": 1,
+        ".json": 44,
+        ".ts": 553,
+        ".rs": 60,
+        ".lock": 2,
+        ".toml": 8,
+        ".py": 3,
+        ".pyc": 2,
+        ".lean": 9,
+        ".tsbuildinfo": 1,
+        ".map": 538,
+        ".js": 269
+      },
+      "languagePresence": {
+        "rust": true,
+        "lean": true,
+        "typescript": true,
+        "python": true,
+        "javascript": true,
+        "markdown": true,
+        "toml": true,
+        "json": true
+      },
+      "directoryPresence": {
+        "docs": true,
+        "src": true,
+        "tests": true,
+        "reports": true,
+        "receipts": false,
+        "schemas": true,
+        "spec": true,
+        "test_vectors": true,
+        "scripts": false,
+        "benches": false,
+        "lean": true,
+        "rust": true,
+        "python_lib": false,
+        "sdks": true,
+        "packages": true,
+        "reference-verifier": true,
+        "crates": false,
+        "audit": true,
+        "visualizer": false,
+        "assets": false,
+        "sandbox": true,
+        "trials": true,
+        "examples": true
+      },
+      "layerPatterns": [
+        {
+          "prefix": "L",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L0_artifact.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L17_philosophical_language.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L1_language_surface.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L2_phrase_parse.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L3_semantic_unit.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L4_intent.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L5_meaning_invariant.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\tests\\L6_L9_registry.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L0_artifact.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L10_verifier.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L11_receipt.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L12_repair.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L13_memory_graph.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L14_retrieval.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L15_governance.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L16_learning_polarity.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L1_language_surface.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L2_phrase_parse.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L3_semantic_unit.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tlt-atlas\\src\\L4_intent.ts"
+          ]
+        },
+        {
+          "prefix": "M",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\tests\\M0_M9_registry.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M0_artifact.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M10_simulation.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M11_formalization.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M12_risk_misuse.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M13_receipt.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M14_repair.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M15_memory_graph.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M16_retrieval.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M17_governance.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M18_operational_lessons.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M1_representation.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M2_model_family.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M3_object_structure.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M4_relation.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M5_invariant.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M6_assumption.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M7_mapping.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M8_analogy.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\math-atlas\\src\\M9_evidence.ts"
+          ]
+        },
+        {
+          "prefix": "R",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\tests\\R21_compute_processor_map.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\resource\\R21_compute_processor_map.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\resource\\R21_processor_runtime.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\tests\\R0_R5_registry.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R0_registry.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R10_benchmark.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R11_repair.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R12_receipt_storage.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R13_energy.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R14_authority.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R15_risk.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R16_scheduler.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R17_throttle.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R18_receipt.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R19_dashboard.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R1_compute.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R20_forecast.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R2_memory.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R3_storage.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\resource\\src\\R4_tokens.ts"
+          ]
+        },
+        {
+          "prefix": "T",
+          "matches": [
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\tests\\T0_T5_T7.test.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T0_registry.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T12_code_adapter.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T13_language_adapter.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T14_math_adapter.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T15_retrieval_guard.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T17_audit.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T19_benchmark.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T3_scanner.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T4_ingestion.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T5_router.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T6_validator.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T7_risk_scanner.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T8_repair_queue.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\packages\\tooling\\src\\T9_receipt_engine.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\dist\\packages\\tooling\\tests\\T0_T5_T7.test.d.ts",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\dist\\packages\\tooling\\tests\\T0_T5_T7.test.d.ts.map",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\dist\\packages\\tooling\\tests\\T0_T5_T7.test.js",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\dist\\packages\\tooling\\tests\\T0_T5_T7.test.js.map",
+            "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-Copilot\\dist\\packages\\tooling\\src\\T0_registry.d.ts"
+          ]
+        }
+      ],
+      "atlasStructures": [
+        "C:/Users"
+      ],
+      "verifierPresence": true,
+      "receiptInfrastructure": false,
+      "specPresence": false,
+      "cicdPresence": false,
+      "sdkPresence": true
+    }
+  },
+  "patterns": [
+    {
+      "id": "P_LANG_RUST_1",
+      "patternName": "Language: rust",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "rust source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_LEAN_2",
+      "patternName": "Language: lean",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "lean source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_TYPESCRIPT_3",
+      "patternName": "Language: typescript",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "typescript source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_PYTHON_4",
+      "patternName": "Language: python",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "python source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_JAVASCRIPT_5",
+      "patternName": "Language: javascript",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "javascript source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_MARKDOWN_6",
+      "patternName": "Language: markdown",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "markdown source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_TOML_7",
+      "patternName": "Language: toml",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "toml source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LANG_JSON_8",
+      "patternName": "Language: json",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "json source files detected in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_DOCS_9",
+      "patternName": "Directory: docs/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `docs/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_SRC_10",
+      "patternName": "Directory: src/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `src/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_TESTS_11",
+      "patternName": "Directory: tests/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `tests/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_REPORTS_12",
+      "patternName": "Directory: reports/",
+      "category": "shared_pattern",
+      "confidence": "cross_observed",
+      "repos": [
+        "ctrl",
+        "copilot"
+      ],
+      "description": "Directory `reports/` found in 2/3 repos. Missing: AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_RECEIPTS_13",
+      "patternName": "Directory: receipts/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "ctrl"
+      ],
+      "description": "Directory `receipts/` found in 1/3 repos. Missing: AIR-prime, Cohbit-Copilot",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_SCHEMAS_14",
+      "patternName": "Directory: schemas/",
+      "category": "shared_pattern",
+      "confidence": "cross_observed",
+      "repos": [
+        "ctrl",
+        "copilot"
+      ],
+      "description": "Directory `schemas/` found in 2/3 repos. Missing: AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_SPEC_15",
+      "patternName": "Directory: spec/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Directory `spec/` found in 1/3 repos. Missing: CohBit-CTRL, AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_TEST_VECTORS_16",
+      "patternName": "Directory: test_vectors/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `test_vectors/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_SCRIPTS_17",
+      "patternName": "Directory: scripts/",
+      "category": "shared_pattern",
+      "confidence": "cross_observed",
+      "repos": [
+        "ctrl",
+        "air"
+      ],
+      "description": "Directory `scripts/` found in 2/3 repos. Missing: Cohbit-Copilot",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_BENCHES_18",
+      "patternName": "Directory: benches/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "ctrl"
+      ],
+      "description": "Directory `benches/` found in 1/3 repos. Missing: AIR-prime, Cohbit-Copilot",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_LEAN_19",
+      "patternName": "Directory: lean/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `lean/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_RUST_20",
+      "patternName": "Directory: rust/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `rust/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_PACKAGES_21",
+      "patternName": "Directory: packages/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Directory `packages/` found in 1/3 repos. Missing: CohBit-CTRL, AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_CRATES_22",
+      "patternName": "Directory: crates/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "ctrl"
+      ],
+      "description": "Directory `crates/` found in 1/3 repos. Missing: AIR-prime, Cohbit-Copilot",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_SANDBOX_23",
+      "patternName": "Directory: sandbox/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Directory `sandbox/` found in 1/3 repos. Missing: CohBit-CTRL, AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_TRIALS_24",
+      "patternName": "Directory: trials/",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Directory `trials/` found in 1/3 repos. Missing: CohBit-CTRL, AIR-prime",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_DIR_EXAMPLES_25",
+      "patternName": "Directory: examples/",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Directory `examples/` found in 3/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_FEAT_VERIFIERPRESENCE_26",
+      "patternName": "Verifier/reference infrastructure",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Verifier/reference infrastructure detected in 1/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_FEAT_RECEIPTINFRASTRUCTURE_27",
+      "patternName": "Receipt infrastructure",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "ctrl"
+      ],
+      "description": "Receipt infrastructure detected in 1/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_FEAT_SPECPRESENCE_28",
+      "patternName": "SPEC.md or equivalent",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "air"
+      ],
+      "description": "SPEC.md or equivalent detected in 1/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_FEAT_CICDPRESENCE_29",
+      "patternName": "CI/CD configuration",
+      "category": "shared_pattern",
+      "confidence": "cross_observed",
+      "repos": [
+        "ctrl",
+        "air"
+      ],
+      "description": "CI/CD configuration detected in 2/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_FEAT_SDKPRESENCE_30",
+      "patternName": "SDK / language bindings",
+      "category": "shared_pattern",
+      "confidence": "cross_observed",
+      "repos": [
+        "ctrl",
+        "copilot"
+      ],
+      "description": "SDK / language bindings detected in 2/3 repos",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_LAYER_L_31",
+      "patternName": "Layer naming: L*",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Layer prefix \"L\" detected in 3/3 repos",
+      "curriculumReference": "Curriculum: Code Invariant Atlas, Mathematics Atlas"
+    },
+    {
+      "id": "P_LAYER_T_32",
+      "patternName": "Layer naming: T*",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Layer prefix \"T\" detected in 3/3 repos",
+      "curriculumReference": "Curriculum: Code Invariant Atlas, Mathematics Atlas"
+    },
+    {
+      "id": "P_LAYER_M_33",
+      "patternName": "Layer naming: M*",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Layer prefix \"M\" detected in 1/3 repos",
+      "curriculumReference": "Curriculum: Code Invariant Atlas, Mathematics Atlas"
+    },
+    {
+      "id": "P_LAYER_R_34",
+      "patternName": "Layer naming: R*",
+      "category": "repo_specific_pattern",
+      "confidence": "observed",
+      "repos": [
+        "copilot"
+      ],
+      "description": "Layer prefix \"R\" detected in 1/3 repos",
+      "curriculumReference": "Curriculum: Code Invariant Atlas, Mathematics Atlas"
+    },
+    {
+      "id": "P_ATLAS_35",
+      "patternName": "Atlas-like structures",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Atlas-like directory structures found in 3/3 repos",
+      "curriculumReference": "Curriculum: Code Invariant Atlas, Bilingual Atlas"
+    },
+    {
+      "id": "P_MULTILANG_36",
+      "patternName": "Multi-language codebase (≥2 of Rust/Lean/TS/Python)",
+      "category": "strong_shared_pattern",
+      "confidence": "strongly_confirmed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Multi-language codebase pattern found in 3/3 repos",
+      "curriculumReference": "Curriculum: Module 7 — Multi-Language Transition Interoperability"
+    },
+    {
+      "id": "P_FILECOUNT_37",
+      "patternName": "File count distribution",
+      "category": "unknown",
+      "confidence": "observed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "File counts: CohBit-CTRL: 12820, AIR-prime: 9621, Cohbit-Copilot: 1574",
+      "curriculumReference": null
+    },
+    {
+      "id": "P_TOPLEVEL_38",
+      "patternName": "Top-level file count",
+      "category": "unknown",
+      "confidence": "observed",
+      "repos": [
+        "ctrl",
+        "air",
+        "copilot"
+      ],
+      "description": "Top-level files: CohBit-CTRL: 6, AIR-prime: 7, Cohbit-Copilot: 8",
+      "curriculumReference": null
+    }
+  ],
+  "tierBRecommendation": {
+    "recommended": true,
+    "reason": "Sufficient shared structure: 19 strongly shared + 5 shared patterns. Tier B content-aware comparison recommended.",
+    "strongSharedCount": 19,
+    "sharedCount": 5,
+    "threshold": {
+      "strongShared": 5,
+      "shared": 10
+    }
+  },
+  "summary": {
+    "totalPatterns": 38,
+    "strongSharedPatterns": 19,
+    "sharedPatterns": 5,
+    "repoSpecificPatterns": 12,
+    "missingExpectedPatterns": 0,
+    "attestation": "CohBit-Copilot v13.6A performs a structural scan of three sibling codebases (CohBit-CTRL, AIR-prime, Cohbit-Copilot) and identifies shared architectural patterns across them. \"Confirmed\" means the same structural pattern appears across multiple codebases and is eligible for stronger review in Tier B. It does not certify correctness, promote canon, verify content, or modify any source. This is a structural observation only."
+  }
+}

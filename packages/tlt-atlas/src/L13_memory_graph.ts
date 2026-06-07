@@ -1,0 +1,5 @@
+// @cohbit/tlt-atlas — L13 Cross-Language Memory Graph Layer
+export type LangMemoryEdgeType = 'means' | 'translates_to' | 'backtranslates_to' | 'preserves' | 'loses_tone' | 'requires_context' | 'risk_flagged_by' | 'repaired_by' | 'preferred_over' | 'blocked_by' | 'domain_limited_by' | 'receipted_as';
+export interface LangMemoryEdge { from: string; to: string; edgeType: LangMemoryEdgeType; }
+export interface LangMemoryGraph { graphId: string; sourcePhrase: string; meaningInvariantId: string; edges: LangMemoryEdge[]; }
+export function createLangMemoryGraph(params: { sourcePhrase: string; meaningInvariantId: string; edges?: LangMemoryEdge[] }): LangMemoryGraph { return { graphId: `LMEM_${Date.now().toString(36)}`, sourcePhrase: params.sourcePhrase, meaningInvariantId: params.meaningInvariantId, edges: params.edges ?? [] }; }

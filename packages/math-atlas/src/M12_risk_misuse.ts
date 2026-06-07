@@ -1,0 +1,10 @@
+// @cohbit/math-atlas — M12 Risk / Misuse Layer (15 RISK_MATH types)
+export type MathRiskSeverity = 'high' | 'medium' | 'low';
+export interface MathRisk { riskId: string; name: string; definition: string; severity: MathRiskSeverity; blockedBy: string[]; status: 'active'; }
+export const RISK_ANALOGY_AS_PROOF: MathRisk = { riskId: 'RISK_MATH_001', name: 'AnalogyAsProof', definition: 'An analogy is presented as if it proves a mathematical theorem.', severity: 'high', blockedBy: ['analogy_boundary', 'evidence_ladder', 'non_collapse_boundary'], status: 'active' };
+export const RISK_SIM_AS_THEOREM: MathRisk = { riskId: 'RISK_MATH_002', name: 'SimulationAsTheorem', definition: 'A computational simulation is presented as if it proves a universal mathematical theorem.', severity: 'high', blockedBy: ['evidence_ladder', 'claim_ceiling', 'formalization_route', 'receipt_limitation'], status: 'active' };
+export const RISK_CODE_AS_PROOF: MathRisk = { riskId: 'RISK_MATH_005', name: 'CodeAsProofWithoutSpec', definition: 'Working code is treated as mathematical proof without formal specification.', severity: 'high', blockedBy: ['formal_specification', 'proof_obligation'], status: 'active' };
+export const RISK_LEAN_STATEMENT: MathRisk = { riskId: 'RISK_MATH_006', name: 'LeanStatementAsCheckedProof', definition: 'A Lean theorem statement is treated as a checked proof.', severity: 'high', blockedBy: ['Lean_checker', 'no_sorry_guarantee'], status: 'active' };
+export const RISK_MODEL_COLLAPSE: MathRisk = { riskId: 'RISK_MATH_007', name: 'ModelCollapse', definition: 'Two distinct mathematical models are collapsed into false equivalence.', severity: 'high', blockedBy: ['non_collapse_boundary', 'model_scope_boundary'], status: 'active' };
+export const MATH_RISKS: Map<string, MathRisk> = new Map([['RISK_MATH_001', RISK_ANALOGY_AS_PROOF], ['RISK_MATH_002', RISK_SIM_AS_THEOREM], ['RISK_MATH_005', RISK_CODE_AS_PROOF], ['RISK_MATH_006', RISK_LEAN_STATEMENT], ['RISK_MATH_007', RISK_MODEL_COLLAPSE]]);
+export function getMathRisk(id: string): MathRisk | undefined { return MATH_RISKS.get(id); }

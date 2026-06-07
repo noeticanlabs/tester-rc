@@ -1,0 +1,111 @@
+{
+  "target": "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\CohBit-primitive-main\\CohBit-primitive\\rust",
+  "sessionId": "v8.1_1780757292483",
+  "ranAt": "2026-06-06T14:48:13.892Z",
+  "totalMs": 1406,
+  "reconciliation": {
+    "newCount": 3,
+    "existingCount": 69,
+    "changedCount": 15,
+    "closedPreserved": 0,
+    "duplicatesPrevented": 84
+  },
+  "processorFragments": [
+    {
+      "processorId": "PROC_e96a31a902aa780b",
+      "kind": "content_read",
+      "status": "completed",
+      "logic": "deterministic",
+      "evidenceLevel": "surface_detected",
+      "cpuMs": 332,
+      "limitation": "Content read records file evidence; it does not interpret correctness.",
+      "boundaryExplanation": "This processor may enforce repeatable boundaries within scope, but it does not prove truth beyond its evidence level."
+    },
+    {
+      "processorId": "PROC_fbdca0d11481e097",
+      "kind": "rust_risk_scan",
+      "status": "completed",
+      "logic": "heuristic",
+      "evidenceLevel": "surface_detected",
+      "cpuMs": 131,
+      "limitation": "Risk scan produces review signals, not verified defects.",
+      "boundaryExplanation": "This processor may suggest or rank possibilities, but it may not authorize, certify, or commit state."
+    },
+    {
+      "processorId": "PROC_cc682ec7642760fb",
+      "kind": "rust_ast_lite_parse",
+      "status": "completed",
+      "logic": "hybrid",
+      "evidenceLevel": "none",
+      "cpuMs": 654,
+      "limitation": "AST-lite improves structure awareness but is not full semantic verification.",
+      "boundaryExplanation": "This hybrid processor must route heuristic outputs through deterministic gates before any action can proceed."
+    },
+    {
+      "processorId": "PROC_fb2d243c331651b9",
+      "kind": "review_queue_build",
+      "status": "completed",
+      "logic": "deterministic",
+      "evidenceLevel": "none",
+      "cpuMs": 18,
+      "limitation": "Review queue assigns priority; it does not prove a defect.",
+      "boundaryExplanation": "This processor may enforce repeatable boundaries within scope, but it does not prove truth beyond its evidence level."
+    },
+    {
+      "processorId": "PROC_51bddb6dce49d119",
+      "kind": "obligation_reconcile",
+      "status": "completed",
+      "logic": "deterministic",
+      "evidenceLevel": "none",
+      "cpuMs": 1,
+      "limitation": "Obligation reconciliation tracks responsibility; it does not close obligations by itself.",
+      "boundaryExplanation": "This processor may enforce repeatable boundaries within scope, but it does not prove truth beyond its evidence level."
+    },
+    {
+      "processorId": "PROC_57f2aa7572233beb",
+      "kind": "receipt_emit",
+      "status": "completed",
+      "logic": "deterministic",
+      "evidenceLevel": "none",
+      "cpuMs": 0,
+      "limitation": "Receipt records boundaries and evidence; it does not prove correctness.",
+      "boundaryExplanation": "This processor may enforce repeatable boundaries within scope, but it does not prove truth beyond its evidence level."
+    },
+    {
+      "processorId": "PROC_a2db4517374a55c0",
+      "kind": "resource_accounting",
+      "status": "completed",
+      "logic": "deterministic",
+      "evidenceLevel": "none",
+      "cpuMs": 0,
+      "limitation": "Resource accounting records consumption; it does not validate semantic correctness.",
+      "boundaryExplanation": "This processor may enforce repeatable boundaries within scope, but it does not prove truth beyond its evidence level."
+    }
+  ],
+  "summary": {
+    "files": 626,
+    "contentFilesRead": 500,
+    "contentBytesRead": 4771167,
+    "totalFindings": 1061,
+    "productionFindings": 593,
+    "testFindings": 419,
+    "p0": 72,
+    "p1": 15,
+    "p2": 488,
+    "p3": 486,
+    "highHigh": 167,
+    "highMedium": 15,
+    "unsafeBlocks": 1,
+    "filesystemWrites": 74,
+    "processCommands": 4,
+    "atlasEntriesWritten": 87,
+    "graphEdges": 193,
+    "obligations": 87,
+    "obligationsOpen": 87,
+    "obligStaleHigh": 0,
+    "escalations": 0,
+    "proposals": 0,
+    "symbols": 12737,
+    "tests": 1485
+  }
+}

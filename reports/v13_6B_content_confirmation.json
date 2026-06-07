@@ -1,0 +1,555 @@
+{
+  "receiptId": "CT_d343d55e833b",
+  "version": "13.6B.0",
+  "pipeline": "v13.6B — Content-Aware Confirmation + Curriculum Annotation (Tier B)",
+  "generatedAt": "2026-06-07T13:25:46.022Z",
+  "priorV13_4Id": "CR_82a1eb06c11f",
+  "priorV13_6AId": "XR_bd7d233fe00c",
+  "annotations": {
+    "totalFindings": 54,
+    "upgraded": 42,
+    "notUpgraded": 12,
+    "byNewStatus": {
+      "cross_observed": 2,
+      "structurally_supported_stale_mapping": 39,
+      "strongly_structurally_confirmed": 1
+    }
+  },
+  "contentMatches": {
+    "total": 20,
+    "byType": {
+      "same_role_different_form": 16,
+      "missing_counterpart": 4
+    }
+  },
+  "curriculumSummary": {
+    "originalFirstObservation": 54,
+    "upgradedToCrossObserved": 2,
+    "upgradedToStronglyConfirmed": 1,
+    "staleMappingsAnnotated": 39,
+    "gapsUnchanged": 12
+  },
+  "matches": [
+    {
+      "id": "CM_1",
+      "role": "SPEC / Architecture",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "SPEC.md",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "SPEC.md",
+          "contentHash": "34bee34d4bfc8f3f",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "spec/SPEC.md",
+          "contentHash": "4631b0bb6d7a76bc",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [AIR-prime, Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_2",
+      "role": "README",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "README.md",
+          "contentHash": "c73e6e8e024e3e88",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "README.md",
+          "contentHash": "7739f623beb0e7bb",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "README.md",
+          "contentHash": "437215f791977814",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [CohBit-CTRL, AIR-prime, Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_3",
+      "role": "LICENSE",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "LICENSE",
+          "contentHash": "a31a10866285f840",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "LICENSE",
+          "contentHash": "05919e2a3ad57206",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [CohBit-CTRL, AIR-prime] but with different content hashes"
+    },
+    {
+      "id": "CM_4",
+      "role": "Receipt Schema (JSON)",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "schemas/cohbit_receipt.schema.json",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "schemas/cohbit_receipt.schema.json",
+          "contentHash": "1a6142d7a15be5d1",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_5",
+      "role": "Receipt Schema (Rust types)",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "sdks/rust/src/types.rs",
+          "contentHash": "25a86c88a8e3acc3",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_6",
+      "role": "Canonical Serialization",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "docs/canonical_serialization.md",
+          "contentHash": "98e055f178ff5400",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_7",
+      "role": "Test Vectors — Identity",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "test_vectors/id_conformance.json",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "test_vectors/id_conformance.json",
+          "contentHash": "2848ff916975e331",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_8",
+      "role": "Test Vectors — Canonical Hardening",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "test_vectors/canonical_hardening.json",
+          "contentHash": "e84a2f818a5c8840",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_9",
+      "role": "Test Vectors — Adversarial",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "test_vectors/adversarial_cases.json",
+          "contentHash": "3f7ee162533887fb",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_10",
+      "role": "Architecture Docs",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "docs/architecture.md",
+          "contentHash": "722e725006496672",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_11",
+      "role": "Learning Doctrine",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "docs/learning_doctrine.md",
+          "contentHash": "664baf60bb9044d3",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_12",
+      "role": "Claim Table",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "docs/claim_table.md",
+          "contentHash": "8952402ad897f130",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_13",
+      "role": "Language Split Doctrine",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "docs/language_split_doctrine.md",
+          "contentHash": "ba8bd966f3f67522",
+          "exists": true
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [Cohbit-Copilot] but with different content hashes"
+    },
+    {
+      "id": "CM_14",
+      "role": "CITATION",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "CITATION.cff",
+          "contentHash": "edb68415f9b849c0",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [AIR-prime] but with different content hashes"
+    },
+    {
+      "id": "CM_15",
+      "role": "CONTRIBUTING",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "CONTRIBUTING.md",
+          "contentHash": "dfd4be3070aa9fde",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [AIR-prime] but with different content hashes"
+    },
+    {
+      "id": "CM_16",
+      "role": "Makefile",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "air",
+          "relativePath": "Makefile",
+          "contentHash": "42e067c4076e0189",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        }
+      ],
+      "matchType": "same_role_different_form",
+      "description": "Same-role files present in [AIR-prime] but with different content hashes"
+    },
+    {
+      "id": "CM_17",
+      "role": "Lean — Reference Verifier",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "lean/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "lean/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "reference-verifier/lean/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        }
+      ],
+      "matchType": "missing_counterpart",
+      "description": "Present in [CohBit-CTRL, AIR-prime, Cohbit-Copilot], missing in []"
+    },
+    {
+      "id": "CM_18",
+      "role": "Rust — Reference Verifier",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "src/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "rust/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "reference-verifier/rust/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        }
+      ],
+      "matchType": "missing_counterpart",
+      "description": "Present in [CohBit-CTRL, AIR-prime, Cohbit-Copilot], missing in []"
+    },
+    {
+      "id": "CM_19",
+      "role": "Rust — SDK / Lib",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "crates/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "sdks/rust/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        }
+      ],
+      "matchType": "missing_counterpart",
+      "description": "Present in [CohBit-CTRL, Cohbit-Copilot], missing in [AIR-prime]"
+    },
+    {
+      "id": "CM_20",
+      "role": "Python — SDK / Lib",
+      "files": [
+        {
+          "repo": "ctrl",
+          "relativePath": "python_lib/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        },
+        {
+          "repo": "air",
+          "relativePath": "(none)",
+          "contentHash": "(dir or absent)",
+          "exists": false
+        },
+        {
+          "repo": "copilot",
+          "relativePath": "sdks/python/",
+          "contentHash": "(dir or absent)",
+          "exists": true
+        }
+      ],
+      "matchType": "missing_counterpart",
+      "description": "Present in [CohBit-CTRL, Cohbit-Copilot], missing in [AIR-prime]"
+    }
+  ],
+  "attestation": "CohBit-Copilot v13.6B retroactively annotates v13.4 curriculum observations using v13.6A cross-repo structural confirmation. Eligible findings are upgraded to cross_observed or strongly_structurally_confirmed. Stale mappings are annotated as structurally_supported where applicable. Gaps and conflicts are not upgraded. Content-aware comparison identifies hash-identical files, role-equivalent files, and missing counterparts. All evidence remains capped at corpus_extracted. Content confirmation does not certify correctness, promote canon, or constitute admitted learning."
+}

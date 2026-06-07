@@ -1,0 +1,1570 @@
+{
+  "receiptId": "SC_3b4f1c6d497d",
+  "version": "13.7.0",
+  "pipeline": "v13.7 — Stable Candidate Review",
+  "generatedAt": "2026-06-07T13:25:46.040Z",
+  "priorV13_4Id": "CR_82a1eb06c11f",
+  "priorV13_5Id": "RR_800ba11905aa",
+  "priorV13_6BId": "CT_d343d55e833b",
+  "summary": {
+    "totalFindings": 54,
+    "stableCandidates": 42,
+    "needsContentConfirmation": 0,
+    "gapRequiresMapping": 12,
+    "notAdmitted": 0
+  },
+  "findings": [
+    {
+      "id": "CC_TLT_1",
+      "sourceFile": "Noetican Code\\Noetican Bilingual Atlas.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "cross_observed",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "cross_observed",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_2",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_3",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_4",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_5",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_6",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_7",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_8",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_9",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_10",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_CODE_11",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_LAYERS_12",
+      "sourceFile": "Noetican Code\\Noetican Code layers.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "strongly_structurally_confirmed",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "strongly_structurally_confirmed",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_13",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics V.0.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "cross_observed",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "cross_observed",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_14",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_15",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_16",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_17",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_18",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_19",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_20",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_21",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_22",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_MATH_23",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_24",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_25",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_26",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_27",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_28",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_29",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_30",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_31",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_RES_32",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_33",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_34",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_35",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_36",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_37",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_38",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_39",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_40",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_41",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_TOOL_42",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgraded": true,
+      "v13_6B_newStatus": "structurally_supported_stale_mapping",
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": true,
+        "upgradedStatus": "structurally_supported_stale_mapping",
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": true,
+        "gate4_noConflict": true
+      },
+      "classification": "stable_candidate",
+      "classificationReason": "Pattern satisfies all four admission gates: curriculum presence, reobservation stability, cross-repo structural confirmation, and absence of conflict.",
+      "nextStep": "Human/admitter review required to promote from stable_candidate to admitted_learning_record. Do NOT claim learned, verified, or canon status."
+    },
+    {
+      "id": "CC_M0_INT_1",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M1_INT_2",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M2_INT_3",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M3_INT_4",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M4_INT_5",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M5_INT_6",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M6_INT_7",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M7_INT_8",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M8_INT_9",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M9_INT_10",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M10_INT_11",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    },
+    {
+      "id": "CC_M11_INT_12",
+      "sourceFile": "N/A (internal only)",
+      "originalType": "gap",
+      "v13_6B_upgraded": false,
+      "v13_6B_newStatus": null,
+      "evidence": {
+        "foundInCurriculum": true,
+        "reobservedStable": true,
+        "structurallyUpgraded": false,
+        "upgradedStatus": null,
+        "hasConflict": false,
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "gateResults": {
+        "gate1_curriculum": true,
+        "gate2_reobserved": true,
+        "gate3_structural": false,
+        "gate4_noConflict": true
+      },
+      "classification": "gap_requires_mapping",
+      "classificationReason": "Internal Teaching KB module lacks matching external curriculum file. Structural confirmation does not close gaps.",
+      "nextStep": "Either create explicit external curriculum module files or document a cross-reference mapping internal TOPIC_KB → existing materials."
+    }
+  ],
+  "gapProposal": {
+    "proposalId": "GAP_PROP_1780838746038",
+    "proposedAt": "2026-06-07T13:25:46.038Z",
+    "status": "proposal_only",
+    "description": "Identified 12 Teaching KB modules (M0-M11) with no matching external curriculum files. Proposed actions are for human review only. No automatic source modification will occur.",
+    "gaps": [
+      {
+        "findingId": "CC_M0_INT_1",
+        "moduleDescription": "Module 0 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 0:]",
+        "rationale": "Internal Teaching KB contains module 0 content with no corresponding external curriculum file. Create an explicit M0 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M1_INT_2",
+        "moduleDescription": "Module 1 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 1:]",
+        "rationale": "Internal Teaching KB contains module 1 content with no corresponding external curriculum file. Create an explicit M1 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M2_INT_3",
+        "moduleDescription": "Module 2 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 2:]",
+        "rationale": "Internal Teaching KB contains module 2 content with no corresponding external curriculum file. Create an explicit M2 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M3_INT_4",
+        "moduleDescription": "Module 3 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 3:]",
+        "rationale": "Internal Teaching KB contains module 3 content with no corresponding external curriculum file. Create an explicit M3 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M4_INT_5",
+        "moduleDescription": "Module 4 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 4:]",
+        "rationale": "Internal Teaching KB contains module 4 content with no corresponding external curriculum file. Create an explicit M4 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M5_INT_6",
+        "moduleDescription": "Module 5 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 5:]",
+        "rationale": "Internal Teaching KB contains module 5 content with no corresponding external curriculum file. Create an explicit M5 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M6_INT_7",
+        "moduleDescription": "Module 6 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 6:]",
+        "rationale": "Internal Teaching KB contains module 6 content with no corresponding external curriculum file. Create an explicit M6 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M7_INT_8",
+        "moduleDescription": "Module 7 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 7:]",
+        "rationale": "Internal Teaching KB contains module 7 content with no corresponding external curriculum file. Create an explicit M7 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M8_INT_9",
+        "moduleDescription": "Module 8 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 8:]",
+        "rationale": "Internal Teaching KB contains module 8 content with no corresponding external curriculum file. Create an explicit M8 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M9_INT_10",
+        "moduleDescription": "Module 9 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 9:]",
+        "rationale": "Internal Teaching KB contains module 9 content with no corresponding external curriculum file. Create an explicit M9 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M10_INT_11",
+        "moduleDescription": "Module 10 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 10:]",
+        "rationale": "Internal Teaching KB contains module 10 content with no corresponding external curriculum file. Create an explicit M10 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      },
+      {
+        "findingId": "CC_M11_INT_12",
+        "moduleDescription": "Module 11 — N/A (internal only)",
+        "suggestedAction": "create_external_module",
+        "internalMatch": "src/teaching.ts → TOPIC_KB[module 11:]",
+        "rationale": "Internal Teaching KB contains module 11 content with no corresponding external curriculum file. Create an explicit M11 module file in the curriculum corpus, or document a cross-reference mapping internal TOPIC_KB entries to existing external materials."
+      }
+    ],
+    "disclaimer": "This proposal is NOT auto-applied. All actions require human review, approval, and explicit implementation. Gap detection does not indicate Teaching KB content is incorrect — only that no external curriculum counterpart was found."
+  },
+  "attestation": "CohBit-Copilot v13.7 applies gated admission criteria to accumulated curriculum evidence. Findings satisfying all four gates are classified as stable_candidate — not as learned. Stale mappings are classified as needs_content_confirmation. Teaching KB gaps receive a proposal-only remediation plan. No findings are admitted as learned. No canon is promoted. Evidence remains capped at corpus_extracted. Human/admitter review is required for final admission to admitted_learning_record."
+}

@@ -1,0 +1,19 @@
+// @cohbit/tlt-atlas — L9 Ambiguity / Risk Layer
+// Flags translation and meaning risks.
+// Spec source: TLT Bilingual Language Atlas v0.2 §L9
+
+export type RiskSeverity = 'high' | 'medium' | 'low';
+export interface AmbiguityRisk { riskId: string; name: string; definition: string; example: string; blockedBy: string[]; severity: RiskSeverity; }
+
+export const RISK_AMBIG_REF: AmbiguityRisk = { riskId: 'RISK_LANG_001', name: 'AmbiguousReferent', definition: 'A phrase contains a pronoun or reference whose target is unclear.', example: 'Make it safe.', blockedBy: ['clarification', 'domain inference', 'context record'], severity: 'medium' };
+export const RISK_FALSE_FRIEND: AmbiguityRisk = { riskId: 'RISK_LANG_002', name: 'FalseFriend', definition: 'A word that looks similar across languages but means something different.', example: 'English "actual" ≠ Spanish "actual" (current).', blockedBy: ['terminology_check', 'backtranslation'], severity: 'medium' };
+export const RISK_TONE_SHIFT: AmbiguityRisk = { riskId: 'RISK_LANG_003', name: 'ToneShift', definition: 'Translation changes the tone, register, or formality level.', example: 'Casual command becomes formal request.', blockedBy: ['tone_comparison', 'register_check'], severity: 'low' };
+export const RISK_OVER_LITERAL: AmbiguityRisk = { riskId: 'RISK_LANG_005', name: 'OverLiteralTranslation', definition: 'Word-for-word translation that loses meaning, tone, or domain context.', example: '"Make it safe" → "Hazlo seguro" — loses risk-reduction meaning.', blockedBy: ['meaning_preserving_projection', 'backtranslation'], severity: 'high' };
+export const RISK_LOST_SAFETY: AmbiguityRisk = { riskId: 'RISK_LANG_006', name: 'LostSafetyConstraint', definition: 'A safety constraint is weakened, omitted, or made optional in translation.', example: 'Safety warning becomes suggestion.', blockedBy: ['safety_review', 'meaning_invariant_check'], severity: 'high' };
+export const RISK_DOMAIN_MISMATCH: AmbiguityRisk = { riskId: 'RISK_LANG_004', name: 'DomainMismatch', definition: 'Translation uses terminology or framing from a different domain.', example: 'Coding term "commit" translated as "comprometer" (compromise).', blockedBy: ['domain_check', 'terminology_registry'], severity: 'medium' };
+export const RISK_TERM_LEAK: AmbiguityRisk = { riskId: 'RISK_LANG_010', name: 'PublicPrivateLanguageLeak', definition: 'Internal terminology or canonical terms leak into public-facing language.', example: 'Using "CohBit" or "CTRL" in a LinkedIn post without context.', blockedBy: ['public_safety_review', 'terminology_filter'], severity: 'high' };
+export const RISK_OVERCLAIM: AmbiguityRisk = { riskId: 'RISK_LANG_015', name: 'ClaimOverreach', definition: 'A translated statement asserts more than evidence supports or the original claimed.', example: '"Passes tests" becomes "Proven correct".', blockedBy: ['claim_boundary_review', 'evidence_level_check'], severity: 'high' };
+
+export const AMBIGUITY_RISKS: Map<string, AmbiguityRisk> = new Map([[RISK_AMBIG_REF.riskId, RISK_AMBIG_REF], [RISK_FALSE_FRIEND.riskId, RISK_FALSE_FRIEND], [RISK_TONE_SHIFT.riskId, RISK_TONE_SHIFT], [RISK_OVER_LITERAL.riskId, RISK_OVER_LITERAL], [RISK_LOST_SAFETY.riskId, RISK_LOST_SAFETY], [RISK_DOMAIN_MISMATCH.riskId, RISK_DOMAIN_MISMATCH], [RISK_TERM_LEAK.riskId, RISK_TERM_LEAK], [RISK_OVERCLAIM.riskId, RISK_OVERCLAIM]]);
+export function getAmbiguityRisk(id: string): AmbiguityRisk | undefined { return AMBIGUITY_RISKS.get(id); }
+export function listBySeverity(severity: RiskSeverity): AmbiguityRisk[] { return [...AMBIGUITY_RISKS.values()].filter(r => r.severity === severity); }

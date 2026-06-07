@@ -1,0 +1,896 @@
+{
+  "receiptId": "AR_d34e9c4c5873",
+  "version": "13.8.0",
+  "pipeline": "v13.8 — Learning Admission Review",
+  "generatedAt": "2026-06-07T13:25:51.515Z",
+  "priorV13_7Id": "SC_3b4f1c6d497d",
+  "priorV13_4Id": "CR_82a1eb06c11f",
+  "summary": {
+    "totalCandidates": 42,
+    "recommendAdmit": 3,
+    "recommendDeferContentReview": 39
+  },
+  "reviewCards": [
+    {
+      "findingId": "CC_TLT_1",
+      "sourceFile": "Noetican Code\\Noetican Bilingual Atlas.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgradeStatus": "cross_observed",
+      "evidenceScore": 2,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "cross_observed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "automatedRecommendation": "admit_as_learning_record",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_2",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_3",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_4",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_5",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_6",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_7",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_8",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_9",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_10",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_CODE_11",
+      "sourceFile": "Noetican Code\\Noetican Code Invariant Atlas v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_LAYERS_12",
+      "sourceFile": "Noetican Code\\Noetican Code layers.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgradeStatus": "strongly_structurally_confirmed",
+      "evidenceScore": 3,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "strongly_structurally_confirmed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "automatedRecommendation": "admit_as_learning_record",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_13",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics V.0.txt",
+      "originalType": "close_analogue",
+      "v13_6B_upgradeStatus": "cross_observed",
+      "evidenceScore": 2,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "cross_observed",
+        "v13_6B_content": "structurally confirmed"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges"
+      ],
+      "automatedRecommendation": "admit_as_learning_record",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_14",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_15",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_16",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_17",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_18",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_19",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_20",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_21",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_22",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_MATH_23",
+      "sourceFile": "Noetican Code\\Noetican Multimodel Mathematics v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_24",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_25",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_26",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_27",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_28",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_29",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_30",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_31",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_RES_32",
+      "sourceFile": "Noetican Code\\Noetican Resource Layer v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_33",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.1.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_34",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.2.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_35",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.3.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_36",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.4.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_37",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.5.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_38",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.6.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_39",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.7.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_40",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.8.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_41",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v0.9.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    },
+    {
+      "findingId": "CC_TOOL_42",
+      "sourceFile": "Noetican Code\\Noetican Tooling Layer v1.0.txt",
+      "originalType": "stale_mapping",
+      "v13_6B_upgradeStatus": "structurally_supported_stale_mapping",
+      "evidenceScore": 1,
+      "evidenceTrail": {
+        "v13_4_present": true,
+        "v13_5_reobserved_stable": true,
+        "v13_6A_structural": "structurally_supported_stale_mapping",
+        "v13_6B_content": "same_role_different_form (stale mapping)"
+      },
+      "knownLimitations": [
+        "Evidence ceiling: corpus_extracted",
+        "Admitted does NOT mean verified, canon, or proven",
+        "Admission may be withdrawn if reobservation diverges",
+        "Stale mapping — content equivalence not yet confirmed"
+      ],
+      "automatedRecommendation": "defer_needs_content_review",
+      "humanReviewStatus": "pending_human_review"
+    }
+  ],
+  "humanReviewInstructions": "This report contains automated advisory recommendations. No findings have been admitted as learned. For each candidate marked admit_as_learning_record, a human reviewer must explicitly confirm admission. For each candidate marked defer_needs_content_review, deeper content hash comparison is recommended before re-review. Evidence ceiling remains corpus_extracted for all candidates. Admitted learning records may be promoted to canon_candidate only after independent verification and additional stability runs.",
+  "attestation": "CohBit-Copilot v13.8 reviews 42 stable candidate curriculum findings with automated advisory recommendations. All admission decisions remain pending_human_review. No findings are admitted as learned without explicit human sign-off. Evidence remains capped at corpus_extracted. No canon is promoted. No source is modified."
+}

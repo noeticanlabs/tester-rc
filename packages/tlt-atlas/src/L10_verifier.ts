@@ -1,0 +1,8 @@
+// @cohbit/tlt-atlas — L10 Verification Route Layer (bilingual meaning)
+export type LangEvidenceLevel = 'none' | 'surface_detected' | 'parsed' | 'intent_mapped' | 'meaning_invariant_mapped' | 'backtranslated' | 'terminology_checked' | 'human_reviewed' | 'domain_reviewed' | 'user_confirmed' | 'canon_approved';
+export interface LangVerifierRoute { routeId: string; name: string; evidenceLevel: LangEvidenceLevel; supports: string[]; cannotSupport: string[]; }
+export const LVR_BACKTRANS: LangVerifierRoute = { routeId: 'VR_LANG_001', name: 'BackTranslation', evidenceLevel: 'backtranslated', supports: ['meaning-preservation check'], cannotSupport: ['full cultural correctness', 'legal accuracy', 'domain expert certainty'] };
+export const LVR_HUMAN: LangVerifierRoute = { routeId: 'VR_LANG_002', name: 'HumanReview', evidenceLevel: 'human_reviewed', supports: ['human-reviewed meaning claim'], cannotSupport: ['automated proof'] };
+export const LVR_AMBIGUITY: LangVerifierRoute = { routeId: 'VR_LANG_006', name: 'AmbiguityCheck', evidenceLevel: 'meaning_invariant_mapped', supports: ['ambiguity detection'], cannotSupport: ['meaning certainty'] };
+export const LANG_VERIFIER_ROUTES: Map<string, LangVerifierRoute> = new Map([['VR_LANG_001', LVR_BACKTRANS], ['VR_LANG_002', LVR_HUMAN], ['VR_LANG_006', LVR_AMBIGUITY]]);
+export const LANG_EVIDENCE_LADDER: LangEvidenceLevel[] = ['none', 'surface_detected', 'parsed', 'intent_mapped', 'meaning_invariant_mapped', 'backtranslated', 'terminology_checked', 'human_reviewed', 'domain_reviewed', 'user_confirmed', 'canon_approved'];

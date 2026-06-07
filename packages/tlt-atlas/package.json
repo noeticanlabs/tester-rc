@@ -1,0 +1,23 @@
+{
+    "name": "@cohbit/tlt-atlas",
+    "version": "0.0.0",
+    "description": "TLT Bilingual Language Atlas — governed bilingual meaning-memory layer for CohBit-Copilot. Maps words, phrases, and intent across languages into shared meaning invariants.",
+    "type": "module",
+    "main": "src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "tlt-atlas",
+        "bilingual",
+        "meaning-invariant",
+        "intent",
+        "translation",
+        "governed-memory"
+    ],
+    "license": "ISC"
+}

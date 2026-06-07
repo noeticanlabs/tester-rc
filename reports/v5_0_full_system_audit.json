@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "target": "C:\\Users\\truea\\OneDrive\\Documents\\New folder (2)\\Cohbit-CTRL",
+    "sessionId": "v5_1780288033817",
+    "totalMs": 12926,
+    "files": 1089,
+    "contentFiles": 500,
+    "codeAtlas": {
+      "entries": 214,
+      "edges": 451,
+      "findings": 835
+    },
+    "mathAtlas": {
+      "entries": 0,
+      "leanFiles": 0,
+      "risks": 0
+    },
+    "tltAtlas": {
+      "entries": 0,
+      "docFiles": 0,
+      "risks": 0
+    },
+    "repairRoutes": {
+      "total": 214,
+      "humanReviewRequired": 214
+    },
+    "retrieval": {
+      "reviewed": 0,
+      "unreviewed": 0,
+      "accepted": 0,
+      "rejected": 214
+    },
+    "constraints": {
+      "mayGenerateProposal": 0,
+      "commitStatusNotApplicable": 214
+    }
+  }
+}

@@ -1,0 +1,438 @@
+[
+    {
+        "name": "integer_normalization_2_2_equals_1_1",
+        "description": "Rational 2/2 must serialize identically to 1/1 after GCD reduction",
+        "input_a": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 2,
+                "denom": 2
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "input_b": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hashes_equal"
+    },
+    {
+        "name": "field_ordering_produces_different_hash",
+        "description": "Swapping version and domainId fields in canonical output must change the hash",
+        "input_a": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 1,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "input_b": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "2",
+            "domainId": "1111111111111111111111111111111111111111111111111111111111111111",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 1,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hashes_different"
+    },
+    {
+        "name": "negative_numer_preserved",
+        "description": "Spend -1/1 must serialize as -1/1 and produce different hash from 1/1",
+        "input_a": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 9,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": -1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "input_b": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 9,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 1,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hashes_different"
+    },
+    {
+        "name": "hash_is_64_hex_chars",
+        "description": "Every valid receipt hash must be exactly 64 lowercase hex characters",
+        "input": {
+            "valuationPre": {
+                "numer": 5,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 5,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hash_length_64"
+    },
+    {
+        "name": "canonical_no_trailing_whitespace",
+        "description": "The canonical string must not end with whitespace or newlines",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "canonical_trimmed"
+    },
+    {
+        "name": "zero_denom_rejected",
+        "description": "A rational with denom=0 must be rejected, not silently hashed",
+        "input": {
+            "valuationPre": {
+                "numer": 10,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 10,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 0,
+                "denom": 0
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "error_rejected"
+    },
+    {
+        "name": "identical_input_identical_hash_repeated",
+        "description": "Computing the hash twice on the same input must produce the same result (idempotence)",
+        "input": {
+            "valuationPre": {
+                "numer": 100,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 95,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 5,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hash_idempotent"
+    },
+    {
+        "name": "gcd_reduction_100_10_equals_10_1",
+        "description": "Rational 100/10 must serialize identically to 10/1 after GCD reduction",
+        "input_a": {
+            "valuationPre": {
+                "numer": 1000,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 900,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 100,
+                "denom": 10
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "input_b": {
+            "valuationPre": {
+                "numer": 1000,
+                "denom": 1
+            },
+            "valuationPost": {
+                "numer": 900,
+                "denom": 1
+            },
+            "version": "1",
+            "domainId": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policyHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "fromState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "toState": "0000000000000000000000000000000000000000000000000000000000000000",
+            "actionHash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "spend": {
+                "numer": 10,
+                "denom": 1
+            },
+            "defect": {
+                "numer": 0,
+                "denom": 1
+            },
+            "prescribedEnvelope": {
+                "numer": 1,
+                "denom": 10
+            },
+            "authority": {
+                "numer": 0,
+                "denom": 1
+            },
+            "certificateHash": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "expect": "hashes_equal"
+    }
+]

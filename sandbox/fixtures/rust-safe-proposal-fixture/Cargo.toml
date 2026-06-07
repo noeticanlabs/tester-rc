@@ -1,0 +1,7 @@
+[package]
+name = "rust-safe-proposal-fixture"
+version = "0.1.0"
+edition = "2021"
+description = "Controlled Rust fixture for CohBit-Copilot safe proposal path testing. Contains todo!/unimplemented! stubs that should generate bounded proposals after review."
+
+[dependencies]

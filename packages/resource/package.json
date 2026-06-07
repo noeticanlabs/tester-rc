@@ -1,0 +1,25 @@
+{
+    "name": "@cohbit/resource",
+    "version": "0.3.0",
+    "description": "Noetican Resource Layer — governs what the system is allowed to spend, reserve, consume, defer, throttle, or refuse.",
+    "type": "module",
+    "main": "src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "resource",
+        "budget",
+        "compute",
+        "memory",
+        "storage",
+        "tokens",
+        "time",
+        "governed-consumption"
+    ],
+    "license": "ISC"
+}

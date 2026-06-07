@@ -1,0 +1,9 @@
+// @cohbit/math-atlas — M6 Assumption / Domain Layer (20 ASM types)
+// Spec: v0.1 §10
+
+export type AssumptionType = 'DomainAssumption' | 'RegularityAssumption' | 'FiniteCaseAssumption' | 'BoundaryCondition' | 'TypeAssumption' | 'ContinuityAssumption' | 'DifferentiabilityAssumption' | 'CompactnessAssumption' | 'DiscretenessAssumption' | 'NumericalTolerance' | 'ComputationalResourceLimit' | 'ProofLibraryDependency' | 'ModelScopeLimit' | 'PhysicalIdealization' | 'AnalogyLimit' | 'DiscretizationAssumption' | 'CategoryAssumption' | 'GraphConnectivityAssumption' | 'StabilityAssumption' | 'VerifierAssumption';
+export const ASSUMPTION_TYPES: AssumptionType[] = ['DomainAssumption', 'RegularityAssumption', 'FiniteCaseAssumption', 'BoundaryCondition', 'TypeAssumption', 'ContinuityAssumption', 'DifferentiabilityAssumption', 'CompactnessAssumption', 'DiscretenessAssumption', 'NumericalTolerance', 'ComputationalResourceLimit', 'ProofLibraryDependency', 'ModelScopeLimit', 'PhysicalIdealization', 'AnalogyLimit', 'DiscretizationAssumption', 'CategoryAssumption', 'GraphConnectivityAssumption', 'StabilityAssumption', 'VerifierAssumption'];
+
+export interface AssumptionRecord { assumptionRecordId: string; mathArtifactId: string; assumptions: string[]; plainAssumptions: string[]; status: 'assumptions_declared'; createdAt: string; }
+let aCounter = 0;
+export function createAssumptionRecord(params: { mathArtifactId: string; assumptions: string[]; plainAssumptions: string[] }): AssumptionRecord { aCounter += 1; return { assumptionRecordId: `MASM_${String(aCounter).padStart(6, '0')}`, mathArtifactId: params.mathArtifactId, assumptions: params.assumptions, plainAssumptions: params.plainAssumptions, status: 'assumptions_declared', createdAt: new Date().toISOString() }; }

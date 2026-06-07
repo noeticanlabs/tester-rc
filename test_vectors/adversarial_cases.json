@@ -1,0 +1,74 @@
+[
+  {
+    "name": "exact_boundary_accept",
+    "v_pre": 10,
+    "v_post": 12,
+    "spend": 1,
+    "defect": 2,
+    "authority": 1,
+    "typed": true,
+    "receipt_valid": true,
+    "verifier_accept": true,
+    "expected": "accept"
+  },
+  {
+    "name": "potential_creation_reject",
+    "v_pre": 10,
+    "v_post": 20,
+    "spend": 1,
+    "defect": 0,
+    "authority": 0,
+    "typed": true,
+    "receipt_valid": true,
+    "verifier_accept": true,
+    "expected": "reject"
+  },
+  {
+    "name": "invalid_receipt_reject",
+    "v_pre": 10,
+    "v_post": 9,
+    "spend": 0,
+    "defect": 0,
+    "authority": 0,
+    "typed": true,
+    "receipt_valid": false,
+    "verifier_accept": true,
+    "expected": "reject"
+  },
+  {
+    "name": "untyped_reject",
+    "v_pre": 10,
+    "v_post": 9,
+    "spend": 0,
+    "defect": 0,
+    "authority": 0,
+    "typed": false,
+    "receipt_valid": true,
+    "verifier_accept": true,
+    "expected": "reject"
+  },
+  {
+    "name": "verifier_reject",
+    "v_pre": 10,
+    "v_post": 9,
+    "spend": 0,
+    "defect": 0,
+    "authority": 0,
+    "typed": true,
+    "receipt_valid": true,
+    "verifier_accept": false,
+    "expected": "reject"
+  },
+  {
+    "name": "boundary_failure_by_1_unit",
+    "v_pre": 10,
+    "v_post": 11,
+    "spend": 0,
+    "defect": 0,
+    "authority": 0,
+    "typed": true,
+    "receipt_valid": true,
+    "verifier_accept": true,
+    "expected": "reject"
+  }
+]

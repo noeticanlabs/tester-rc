@@ -1,0 +1,22 @@
+{
+    "name": "@cohbit/tooling",
+    "version": "0.8.0",
+    "description": "Noetican Tooling Layer — executable bridge between CohBit-copilot, atlas memory systems, validators, and receipts.",
+    "type": "module",
+    "main": "src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "tooling",
+        "pipeline",
+        "atlas-router",
+        "risk-scanner",
+        "governed-execution"
+    ],
+    "license": "ISC"
+}

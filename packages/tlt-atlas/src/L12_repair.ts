@@ -1,0 +1,6 @@
+// @cohbit/tlt-atlas — L12 Repair / Clarification Layer
+export type BilingualRepairType = 'clarify_referent' | 'clarify_domain' | 'adjust_tone' | 'replace_false_friend' | 'restore_lost_constraint' | 'simplify_language' | 'technicalize_language' | 'public_safe_rewrite' | 'claim_boundary_repair' | 'bilingual_backtranslation_repair';
+export type BilingualRepairStatus = 'open' | 'in_progress' | 'accepted_with_limitations' | 'rejected' | 'closed';
+export interface BilingualRepairRecord { repairId: string; linkedReceiptId: string; failureReason: string; repairAction: string; repairType: BilingualRepairType; status: BilingualRepairStatus; createdAt: string; }
+export const BILINGUAL_REPAIR_TYPES: BilingualRepairType[] = ['clarify_referent', 'clarify_domain', 'adjust_tone', 'replace_false_friend', 'restore_lost_constraint', 'simplify_language', 'technicalize_language', 'public_safe_rewrite', 'claim_boundary_repair', 'bilingual_backtranslation_repair'];
+export function createBilingualRepair(params: { linkedReceiptId: string; failureReason: string; repairAction: string; repairType: BilingualRepairType }): BilingualRepairRecord { return { repairId: `LREPAIR_${Date.now().toString(36)}`, ...params, status: 'open', createdAt: new Date().toISOString() }; }
