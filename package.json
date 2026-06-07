@@ -34,8 +34,8 @@
     "receipt-based",
     "admissibility"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Noetican Labs",
+  "license": "UNLICENSED",
   "type": "module",
   "devDependencies": {
     "@types/node": "^25.9.1",

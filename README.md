@@ -287,4 +287,18 @@ Full audit report: `reports/v14_5_wiring_runtime_audit.md`
 
 ---
 
-*CohBit-Copilot Tester Release Candidate v14.6-rc. Private, invite-only. Not for public distribution.*
+*CohBit-Copilot Tester Release Candidate v14.6-rc.*
+
+---
+
+## License
+
+This software is provided under a **Tester Release Candidate License** — private, invite-only, for evaluation and feedback purposes. No redistribution. No commercial use. No derivative works for distribution.
+
+See [LICENSE](./LICENSE) for full terms.
+
+## Trademarks
+
+Noetican Labs™ and CohBit™ are trademarks of Noetican Labs.
+
+All other trademarks and trade names are the property of their respective owners.

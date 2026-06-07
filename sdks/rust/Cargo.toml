@@ -3,6 +3,7 @@ name = "cohbit-copilot-sdk"
 version = "0.5.0"
 edition = "2021"
 description = "CohBit-Copilot Rust Conformance SDK — mirrors the canonical receipt model for cross-language identity testing. Not a production client library."
+license = "UNLICENSED"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
