@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// CohBit-Copilot CLI (v14.5)
+// CohBit-Copilot CLI (v14.6-rc)
 // Exposes the governed patch pipeline, integrated audit, obligations, and dashboard.
 // All auditable handlers are wrapped in runGoverned() for resource enforcement.
 //

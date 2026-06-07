@@ -227,7 +227,8 @@ Sections include: environment, install friction, command success/failure, concep
 | [Authority Boundary](docs/authority_boundary.md) | What the copilot may and may not do |
 | [Gate Lifecycle](docs/gate_lifecycle.md) | Seven-gate pipeline documentation |
 | [Architecture](docs/architecture.md) | High-level architecture summary |
-
+| [CohBit-Copilot Brief](docs/brief_cohbit_copilot.md) | Tester-facing informational brief — what it is, how it works, what to evaluate |
+| [TTC + CohBit Stack Brief](docs/brief_ttc_cohbit_stack.md) | Technical architecture brief — TTC transition-control stack and CohBit receipt layer |
 ---
 
 ## Required Fixtures
